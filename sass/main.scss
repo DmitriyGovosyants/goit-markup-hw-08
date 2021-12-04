@@ -1,32 +1,5 @@
-@import './utils/variables';
-@import './utils/placeholders';
-@import './utils/mixins';
-@import './base/global-styles';
-
-@import './components/common/base-layout';
-@import './components/common/logo';
-@import './components/common/button';
-@import './components/common/button-close';
-@import './components/common/socials';
-
-@import './components/page-header/page-header';
-@import './components/page-header/site-nav';
-@import './components/page-header/contacts';
-
-@import './components/page-main-studio/hero-section';
-@import './components/page-main-studio/features-section';
-@import './components/page-main-studio/about-section';
-@import './components/page-main-studio/team-section';
-@import './components/page-main-studio/clients-section';
-
-@import './components/page-main-portfolio/filter';
-@import './components/page-main-portfolio/portfolio';
-
-@import './components/page-footer/page-footer';
-@import './components/page-footer/address';
-@import './components/page-footer/join-us';
-@import './components/page-footer/subscribe';
-
-@import './components/form/backdrop';
-@import './components/form/callback-modal';
-@import './components/form/callback-form';
+@import 'utils/module';
+@import 'base/module';
+@import 'components/module';
+@import 'layout/module';
+@import 'pages/module';

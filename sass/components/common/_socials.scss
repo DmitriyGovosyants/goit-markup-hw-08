@@ -1,6 +1,3 @@
-/*=======================================================
-  Socials icons
-=======================================================*/
 .socials {
   @extend %flex-center;
 }
@@ -41,8 +38,7 @@
 
     background-color: getColor('bgd-socials-light');
 
-    transition: background-color var(--animation-duration)
-      var(--animation-timing-function);
+    transition: background-color var(--animation-duration) var(--animation-timing-function);
   }
 
   &--light:hover,
