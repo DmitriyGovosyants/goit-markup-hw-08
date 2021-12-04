@@ -1,0 +1,14 @@
+/*=======================================================
+  Join-us
+=======================================================*/
+.join-us {
+  margin-left: 70px;
+}
+
+.join-us__label {
+  margin-bottom: 20px;
+
+  font-weight: $fw-l;
+  text-transform: uppercase;
+  color: getColor('text-tertiary');
+}

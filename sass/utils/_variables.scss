@@ -1,0 +1,66 @@
+/*=======================================================
+Variable
+=======================================================*/
+:root {
+  --animation-duration: 250ms;
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$colors-main-theme: (
+  'title-primary': #212121,
+  'title-secondary': #ffffff,
+  'text-primary': #757575,
+  'text-secondary': #212121,
+  'text-tertiary': #ffffff,
+  'accent': #2196f3,
+  'logo-primary': #000000,
+  'logo-secondary': #ffffff,
+  'icon-primary': #afb1b8,
+  'bgd-primary': #ffffff,
+  'bgd-secondary': #2f303a,
+  'bgd-tertiary': #f5f4fa,
+  'bgd-button-focus': #188ce8,
+  'bgd-socials-light': rgba(255, 255, 255, 0.1),
+);
+
+$colors-ua-theme: (
+  'title-primary': #212121,
+  'title-secondary': #ffffff,
+  'text-primary': #757575,
+  'text-secondary': #212121,
+  'text-tertiary': #ffffff,
+  'accent': #0082d1,
+  'logo-primary': #ffd100,
+  'logo-secondary': #ffd100,
+  'icon-primary': #afb1b8,
+  'bgd-primary': #ffffff,
+  'bgd-secondary': #2f303a,
+  'bgd-tertiary': #f5f4fa,
+  'bgd-button-focus': #ffd100,
+  'bgd-socials-light': rgba(255, 255, 255, 0.1),
+);
+
+@function getColor($key) {
+  @return map-get($colors-main-theme, $key);
+}
+
+// font-size
+$fs-xs: 12px;
+$fs-s: 14px;
+$fs-m: 16px;
+$fs-l: 18px;
+$fs-xl: 20px;
+$fs-2xl: 26px;
+$fs-3xl: 36px;
+$fs-4xl: 44px;
+
+// font-weight
+$fw-m: 500;
+$fw-l: 700;
+$fw-xl: 900;
+
+// letter-spacing
+$ls-xs: 0.01em;
+$ls-s: 0.02em;
+$ls-m: 0.03em;
+$ls-l: 0.06em;

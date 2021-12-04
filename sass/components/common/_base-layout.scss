@@ -1,0 +1,47 @@
+/*=======================================================
+Base Layout
+=======================================================*/
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--no-bt-padding {
+    padding-bottom: 0;
+  }
+
+  &--bgd-color {
+    background-color: getColor('bgd-tertiary');
+  }
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  font-weight: $fw-l;
+  font-size: $fs-3xl;
+  letter-spacing: $ls-m;
+  color: getColor('title-primary');
+  text-align: center;
+
+  &--hidden {
+    @extend %visuallity-hidden;
+  }
+}
+
+.footer-fixed-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 80px);
+}
+
+.main-content {
+  flex-grow: 1;
+}

@@ -1,0 +1,48 @@
+/*=======================================================
+  Subscribe
+=======================================================*/
+.subscribe {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+
+  font-weight: $fw-l;
+  text-transform: uppercase;
+  color: getColor('text-tertiary');
+}
+
+.subscribe__email {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.subscribe__input {
+  min-width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-size: $fs-m;
+  line-height: 1.25;
+  letter-spacing: $ls-m;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: getColor('bgd-secondary');
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: border-color var(--animation-duration)
+    var(--animation-timing-function);
+  outline: none;
+
+  &:focus {
+    border: 1px solid getColor('accent');
+  }
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+}

@@ -1,0 +1,16 @@
+/*=======================================================
+    Filter
+=======================================================*/
+.filter {
+  text-align: center;
+}
+.filter__input {
+  @extend %visuallity-hidden;
+
+  &--check-web:checked ~ .portfolio .portfolio__item:not(.portfolio__item--checked-web),
+  &--check-app:checked ~ .portfolio .portfolio__item:not(.portfolio__item--checked-app),
+  &--check-design:checked ~ .portfolio .portfolio__item:not(.portfolio__item--checked-design),
+  &--check-marketing:checked ~ .portfolio .portfolio__item:not(.portfolio__item--checked-marketing) {
+    display: none;
+  }
+}

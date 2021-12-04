@@ -1,0 +1,56 @@
+/*=======================================================
+  Socials icons
+=======================================================*/
+.socials {
+  @extend %flex-center;
+}
+
+.socials__item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.socials__link {
+  @extend %flex-center;
+
+  width: 100%;
+  height: 100%;
+
+  color: getColor('icon-primary');
+
+  background-color: getColor('bgd-primary');
+  border: none;
+  border-radius: 50%;
+
+  transition: color var(--animation-duration) var(--animation-timing-function),
+    background-color var(--animation-duration) var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    color: getColor('bgd-primary');
+
+    background-color: getColor('accent');
+  }
+
+  &--light {
+    color: getColor('bgd-primary');
+
+    background-color: getColor('bgd-socials-light');
+
+    transition: background-color var(--animation-duration)
+      var(--animation-timing-function);
+  }
+
+  &--light:hover,
+  &--light:focus {
+    background-color: getColor('accent');
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}

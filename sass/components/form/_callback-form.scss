@@ -1,0 +1,120 @@
+/*=======================================================
+  Callback-form
+=======================================================*/
+.callback-form {
+}
+
+.callback-form__field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-size: $fs-xs;
+  letter-spacing: $ls-xs;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
+.callback-form__inner {
+  position: relative;
+
+  width: 100%;
+  margin-top: 4px;
+}
+
+.callback-form__input {
+  width: 100%;
+  height: 40px;
+  padding: 0 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color var(--animation-duration) var(--animation-timing-function);
+
+  &:focus {
+    border: 1px solid getColor('accent');
+    border-radius: 4px;
+  }
+}
+
+.callback-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+  transition: fill var(--animation-duration) var(--animation-timing-function);
+
+  .callback-form__input:focus + & {
+    fill: getColor('accent');
+  }
+}
+
+.callback-form__comment {
+  width: 100%;
+  margin-top: 4px;
+  padding: 11px 15px;
+
+  font-size: $fs-xs;
+  line-height: 1.17;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color var(--animation-duration) var(--animation-timing-function);
+  resize: none;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    border: 1px solid getColor('accent');
+    border-radius: 4px;
+  }
+}
+
+.callback-form__agreement-field {
+  @extend %flex-center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  line-height: 1.71;
+  user-select: none;
+}
+
+.callback-form__agreement-chekbox {
+  @extend %visuallity-hidden;
+}
+
+.callback-form__agreement-icon {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid getColor('text-secondary');
+  border-radius: 2px;
+
+  .callback-form__agreement-chekbox:checked + & {
+    background-color: getColor('accent');
+    border-color: getColor('accent');
+    background-image: url('../images/agreement-ok.svg');
+    background-size: contain;
+  }
+
+  .callback-form__agreement-chekbox:focus + & {
+    border: 2px solid getColor('accent');
+  }
+}
+
+.callback-form__agreement-link {
+  margin-left: 5px;
+
+  text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+/*=======================================================
+Basic Elements
+=======================================================*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $fs-s;
+  line-height: 1.17;
+  letter-spacing: $ls-m;
+  color: getColor('text-primary');
+
+  background-color: getColor('bgd-primary');
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

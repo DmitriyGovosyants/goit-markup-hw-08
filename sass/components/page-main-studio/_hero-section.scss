@@ -1,0 +1,38 @@
+/*=======================================================
+    Hero section
+=======================================================*/
+
+.hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+
+  background-color: getColor('bgd-secondary');
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  width: 59%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  font-weight: $fw-xl;
+  font-size: $fs-4xl;
+  line-height: 1.36;
+  letter-spacing: $ls-l;
+  text-transform: uppercase;
+  color: getColor('title-secondary');
+}

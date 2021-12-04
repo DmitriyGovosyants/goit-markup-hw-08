@@ -1,0 +1,18 @@
+/*=======================================================
+  Logo
+=======================================================*/
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: $fw-l;
+  font-size: $fs-2xl;
+  letter-spacing: $ls-m;
+  color: getColor('accent');
+}
+
+.logo__second-part {
+  color: getColor('logo-primary');
+
+  &--light {
+    color: getColor('logo-secondary');
+  }
+}

@@ -1,0 +1,77 @@
+/*=======================================================
+  Button
+=======================================================*/
+
+.button {
+  min-width: 200px;
+  height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-weight: $fw-l;
+  font-size: $fs-m;
+  line-height: 1.87;
+  letter-spacing: $ls-l;
+  color: getColor('text-tertiary');
+
+  background-color: getColor('accent');
+  border: 1px transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color var(--animation-duration) var(--animation-timing-function);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('bgd-button-focus');
+  }
+
+  &--flex {
+    @extend %flex-center;
+  }
+
+  &--filter {
+    display: inline-block;
+    min-width: 0;
+    height: 38px;
+    padding: 6px 22px;
+
+    font-weight: $fw-m;
+    line-height: 1.63;
+    letter-spacing: $ls-m;
+    color: getColor('text-secondary');
+
+    background-color: getColor('bgd-tertiary');
+    box-shadow: none;
+
+    transition: color var(--animation-duration) var(--animation-timing-function),
+      background-color var(--animation-duration) var(--animation-timing-function),
+      box-shadow var(--animation-duration) var(--animation-timing-function);
+  }
+
+  &--filter:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &--filter:hover,
+  &--filter:focus {
+    color: getColor('text-tertiary');
+
+    background-color: getColor('accent');
+    border: 1px transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  .filter__input--check-all:checked ~ &--check-all,
+  .filter__input--check-web:checked ~ &--check-web,
+  .filter__input--check-app:checked ~ &--check-app,
+  .filter__input--check-design:checked ~ &--check-desing,
+  .filter__input--check-marketing:checked ~ &--check-marketing {
+    color: getColor('text-tertiary');
+
+    background-color: getColor('accent');
+    border: 1px transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

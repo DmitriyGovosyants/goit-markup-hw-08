@@ -1,0 +1,24 @@
+/*=======================================================
+  Button-close
+=======================================================*/
+.button-close {
+  @extend %flex-center;
+  width: 30px;
+  height: 30px;
+
+  background-color: inherit;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: color var(--animation-duration) var(--animation-timing-function);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
+}
+
+.button-close__icon {
+  fill: currentColor;
+}
