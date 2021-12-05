@@ -122,25 +122,34 @@
     </section>
     
     <!-- About us section -->
-    <section class="section">
+    <section class="section section--hidden">
       <div class="container">
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="about">
           <li class="about__item">
             <div class="about__content">
-              <img src="./images/what-we-are-doing-1.jpg" alt="Создаем структуру сайта">
+              <picture>
+                <source srcset="./images/what-we-are-doing-1-370.jpg 1x, ./images/what-we-are-doing-1-370@2x.jpg 2x">
+                <img src="./images/what-we-are-doing-1-370.jpg" alt="Создаем структуру сайта">
+              </picture>
               <p class="about__text">Десктопные приложения</p>
             </div>
           </li>
           <li class="about__item">
             <div class="about__content">
-              <img src="./images/what-we-are-doing-2.jpg" alt="Адаптируем под мобильные платформы">
+              <picture>
+                <source srcset="./images/what-we-are-doing-2-370.jpg 1x, ./images/what-we-are-doing-2-370@2x.jpg 2x">
+                <img src="./images/what-we-are-doing-2-370.jpg" alt="Адаптируем под мобильные платформы">
+              </picture>
               <p class="about__text">Мобильные приложения</p>
             </div>
           </li>
           <li class="about__item">
             <div class="about__content">
-              <img src="./images/what-we-are-doing-3.jpg" alt="Делаем оформление сайта">
+              <picture>
+                <source srcset="./images/what-we-are-doing-3-370.jpg 1x, ./images/what-we-are-doing-3-370@2x.jpg 2x">
+                <img src="./images/what-we-are-doing-3-370.jpg" alt="Адаптируем под мобильные платформы">
+              </picture>
               <p class="about__text">Дизайнерские решения</p>
             </div>
           </li>
@@ -154,7 +163,12 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="team">
           <li class="team__item">
-            <img class="team__img" src="./images/team-member-1.jpg" alt="Член команды">
+            <picture>
+              <source srcset="./images/team-member-1-270.jpg 1x, ./images/team-member-1-270@2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/team-member-1-354.jpg 1x, ./images/team-member-1-354@2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/team-member-1-450.jpg 1x, ./images/team-member-1-450@2x.jpg 2x">
+              <img src="./images/team-member-1-450.jpg" alt="Член команды">
+            </picture>
             <div class="team__content">
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__text" lang="en">Product Designer</p>
@@ -191,7 +205,12 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/team-member-2.jpg" alt="Член команды">
+            <picture>
+              <source srcset="./images/team-member-2-270.jpg 1x, ./images/team-member-2-270@2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/team-member-2-354.jpg 1x, ./images/team-member-2-354@2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/team-member-2-450.jpg 1x, ./images/team-member-2-450@2x.jpg 2x">
+              <img src="./images/team-member-2-450.jpg" alt="Член команды">
+            </picture>
             <div class="team__content">
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__text" lang="en">Frontend Developer</p>
@@ -228,7 +247,12 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/team-member-3.jpg" alt="Член команды">
+            <picture>
+              <source srcset="./images/team-member-3-270.jpg 1x, ./images/team-member-3-270@2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/team-member-3-354.jpg 1x, ./images/team-member-3-354@2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/team-member-3-450.jpg 1x, ./images/team-member-3-450@2x.jpg 2x">
+              <img src="./images/team-member-3-450.jpg" alt="Член команды">
+            </picture>
             <div class="team__content">
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__text" lang="en">Marketing</p>
@@ -265,7 +289,12 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/team-member-4.jpg" alt="Член команды">
+            <picture>
+              <source srcset="./images/team-member-4-270.jpg 1x, ./images/team-member-4-270@2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/team-member-4-354.jpg 1x, ./images/team-member-4-354@2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/team-member-4-450.jpg 1x, ./images/team-member-4-450@2x.jpg 2x">
+              <img src="./images/team-member-4-450.jpg" alt="Член команды">
+            </picture>
             <div class="team__content">
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__text" lang="en">UI Designer</p>
@@ -358,32 +387,30 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container page-footer__container">
-      <div>
+    <div class="container page-footer__container">        
+      <address class="address">
         <a class="logo" href="./index.html" lang="en">
           Web<span class="logo__second-part logo__second-part--light">Studio</span>
         </a>
-        <address class="address">
-          <ul>
-            <li class="address__item">
-              <a class="address__link"
-                href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                rel="noopener noreferrer" target="_blank">г. Киев, пр-т Леси Украинки, 26
-              </a>
-            </li>
-            <li class="address__item">
-              <a class="address__contact" href="mailto:info@example.com">
-                info@example.com
-              </a>
-            </li>
-            <li class="address__item">
-              <a class="address__contact" href="tel:+380991111111">
-                +38 099 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
-      </div>
+        <ul class="address_list">
+          <li class="address__item">
+            <a class="address__link"
+              href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+              rel="noopener noreferrer" target="_blank">г. Киев, пр-т Леси Украинки, 26
+            </a>
+          </li>
+          <li class="address__item">
+            <a class="address__contact" href="mailto:info@example.com">
+              info@example.com
+            </a>
+          </li>
+          <li class="address__item">
+            <a class="address__contact" href="tel:+380991111111">
+              +38 099 111 11 11
+            </a>
+          </li>
+        </ul>
+      </address>      
       <div class="join-us">
         <p class="join-us__label">
           Присоединяйтесь

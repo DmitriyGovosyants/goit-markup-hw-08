@@ -1,35 +1,60 @@
 .container {
-  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+
+  @include mq(mobile) {
+    width: 480px;
+    outline: 1px solid tomato;
+  }
+  @include mq(tablet) {
+    width: 768px;
+  }
+  @include mq(desktop) {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  &--no-bt-padding {
-    padding-bottom: 0;
-  }
+  padding: 60px 0;
 
   &--bgd-color {
     background-color: getColor('bgd-tertiary');
   }
+
+  @include mq(notDesktop) {
+    &--hidden {
+      display: none;
+    }
+  }
+  @include mq(desktop) {
+    padding-top: 94px 0;
+
+    &--no-bt-padding {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
-
   font-weight: $fw-l;
-  font-size: $fs-3xl;
+  font-size: $fs-2xl-up;
   letter-spacing: $ls-m;
-  color: getColor('title-primary');
   text-align: center;
+
+  color: getColor('title-primary');
 
   &--hidden {
     @extend %visuallity-hidden;
+  }
+
+  @include mq(notDesktop) {
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 50px;
+    font-size: $fs-3xl;
   }
 }
 

@@ -1,5 +1,7 @@
 .filter {
-  text-align: center;
+  @include mq(tablet) {
+    text-align: center;
+  }
 }
 .filter__input {
   @extend %visuallity-hidden;

@@ -1,20 +1,36 @@
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-top: 35px;
-  margin-right: -15px;
-  margin-left: -15px;
-  margin-bottom: -15px;
-
   text-align: left;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -15px;
+  }
+  @include mq(desktop) {
+    margin-top: 35px;
+  }
 }
 
 .portfolio__item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin: 15px;
-
   transition: transform var(--animation-duration) var(--animation-timing-function);
+
+  @include mq(mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @include mq(tablet) {
+    margin: 15px;
+  }
+  @include mq(tablet-only) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @include mq(desktop) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .portfolio__link {

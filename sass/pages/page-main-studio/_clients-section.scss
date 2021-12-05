@@ -1,13 +1,30 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
+
+  @include mq(notDesktop) {
+    margin: -15px;
+  }
 }
 
 .clients__item {
-  flex-basis: calc((100% - 150px) / 6);
   height: 92px;
 
-  &:not(:first-child) {
-    margin-left: 30px;
+  @include mq(notDesktop) {
+    margin: 15px;
+  }
+  @include mq(mobile-only) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @include mq(tablet-only) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @include mq(desktop) {
+    flex-basis: calc((100% - 150px) / 6);
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
   }
 }
 

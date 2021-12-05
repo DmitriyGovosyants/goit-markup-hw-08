@@ -1,21 +1,25 @@
 .subscribe {
-  display: flex;
-  align-items: flex-end;
-  margin-left: auto;
-
   font-weight: $fw-l;
   text-transform: uppercase;
   color: getColor('text-tertiary');
-}
 
+  @include mq(notDesktop) {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+  }
+}
 .subscribe__email {
   display: flex;
   flex-direction: column;
-  margin-right: 12px;
 }
 
 .subscribe__input {
-  min-width: 358px;
   height: 50px;
   margin-top: 20px;
   padding-left: 16px;
@@ -36,6 +40,19 @@
 
   &:focus {
     border: 1px solid getColor('accent');
+  }
+  @include mq(mobile-only) {
+    max-width: 450px;
+  }
+  @include mq(tablet-only) {
+    width: 450px;
+  }
+  @include mq(notDesktop) {
+    margin-bottom: 20px;
+  }
+  @include mq(desktop) {
+    min-width: 358px;
+    margin-right: 12px;
   }
 }
 

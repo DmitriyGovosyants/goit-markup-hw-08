@@ -1,29 +1,72 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0px;
 
   text-align: center;
 
   background-color: getColor('bgd-secondary');
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-480.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include mq(retina) {
+    & {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-480@2x.jpg');
+    }
+  }
+
+  @include mq(tablet) {
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-768.jpg');
+
+    @include mq(retina) {
+      & {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../images/hero-768@2x.jpg');
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    max-width: 1600px;
+    padding: 200px 0px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-1600.jpg');
+
+    @include mq(retina) {
+      & {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../images/hero-1600@2x.jpg');
+      }
+    }
+  }
 }
 
 .hero__title {
-  width: 59%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
 
   font-weight: $fw-xl;
-  font-size: $fs-4xl;
-  line-height: 1.36;
+  font-size: $fs-2xl;
+  line-height: 1.62;
   letter-spacing: $ls-l;
   text-transform: uppercase;
   color: getColor('title-secondary');
+
+  @include mq(tablet) {
+    width: 49%;
+  }
+  @include mq(desktop) {
+    width: 59%;
+    font-size: $fs-4xl;
+    line-height: 1.36;
+  }
 }

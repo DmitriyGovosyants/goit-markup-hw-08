@@ -3,9 +3,21 @@
   padding-bottom: 60px;
 
   background-color: getColor('bgd-secondary');
+
+  @include mq(notDesktop) {
+    text-align: center;
+  }
 }
 
 .page-footer__container {
-  display: flex;
-  align-items: baseline;
+  @include mq(tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+  @include mq(tablet-only) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include mq(desktop) {
+  }
 }

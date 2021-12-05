@@ -1,14 +1,24 @@
 .address {
-  margin-top: 20px;
+  font-style: normal;
 }
 
+.address_list {
+  margin-top: 20px;
+}
 .address__item {
   font-style: normal;
   line-height: 1.71;
   color: inherit;
 
-  &:not(:first-child) {
-    margin-top: 9px;
+  @include mq(notDesktop) {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+  @include mq(desktop) {
+    &:not(:first-child) {
+      margin-top: 9px;
+    }
   }
 }
 

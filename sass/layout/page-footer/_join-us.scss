@@ -1,5 +1,15 @@
 .join-us {
-  margin-left: 70px;
+  @include mq(mobile-only) {
+    margin-top: 60px;
+  }
+  @include mq(tablet-only) {
+    margin-left: 165px;
+  }
+}
+.join-us {
+  @include mq(desktop) {
+    margin-left: 70px;
+  }
 }
 
 .join-us__label {
