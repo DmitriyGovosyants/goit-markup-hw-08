@@ -1,25 +1,69 @@
 .callback-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-
-  min-width: 528px;
-  min-height: 581px;
+  position: relative;
   padding: 40px;
-
   text-align: center;
 
   background: getColor('bgd-primary');
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  transform: scale(1);
   transition: transform var(--animation-duration) var(--animation-timing-function);
 
   .backdrop--hidden & {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: scale(1.1);
+  }
+
+  @include mq(mobile-only) {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 450px;
+
+    transform: translate(-50%, -50%) scale(1);
+
+    .backdrop--hidden & {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+  @include mq(desktop) {
+    max-width: 528px;
   }
 }
+.callback-modal__button-close {
+}
+
+// .callback-modal {
+//
+//
+
+//   transition: transform var(--animation-duration) var(--animation-timing-function);
+
+//   .backdrop--hidden & {
+//     transform: translate(-50%, -50%) scale(1.1);
+//   }
+
+//   @include mq(mobile) {
+//     width: 450px;
+//   }
+//   @include mq(tablet) {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+
+//     transform: translate(-50%, -50%) scale(1);
+//   }
+//   @include mq(desktop) {
+//     min-width: 528px;
+//   }
+// }
 
 .callback-modal__title {
   display: inline-block;
@@ -27,9 +71,13 @@
 
   font-weight: $fw-l;
   font-size: $fs-xl;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: $ls-m;
   color: getColor('title-primary');
+
+  @include mq(desktop) {
+    line-height: 1.15;
+  }
 }
 
 .callback-modal__button-close {

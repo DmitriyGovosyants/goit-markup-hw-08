@@ -96,13 +96,16 @@
 }
 
 .portfolio__title {
+  height: $fs-l * $lh-portfolio-title * 2;
   margin-bottom: 4px;
 
   font-weight: $fw-l;
   font-size: $fs-l;
-  line-height: 2;
+  line-height: $lh-portfolio-title;
   letter-spacing: $ls-l;
   color: getColor('title-primary');
+
+  overflow: hidden;
 }
 
 .portfolio__text {

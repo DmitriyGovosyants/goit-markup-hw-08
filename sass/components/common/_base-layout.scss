@@ -29,7 +29,7 @@
     }
   }
   @include mq(desktop) {
-    padding-top: 94px 0;
+    padding: 94px 0;
 
     &--no-bt-padding {
       padding-bottom: 0;

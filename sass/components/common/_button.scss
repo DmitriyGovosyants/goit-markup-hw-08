@@ -67,7 +67,6 @@
   }
 
   @include mq(mobile-only) {
-    margin-bottom: 15px;
     &--check-marketing {
       margin-bottom: 30px;
     }

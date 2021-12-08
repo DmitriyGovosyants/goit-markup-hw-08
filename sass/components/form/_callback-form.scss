@@ -81,8 +81,15 @@
   margin-top: 20px;
   margin-bottom: 30px;
 
-  line-height: 1.71;
   user-select: none;
+
+  @include mq(notDesktop) {
+    font-size: $fs-xs;
+  }
+  @include mq(desktop) {
+    font-size: inherit;
+    line-height: 1.71;
+  }
 }
 
 .callback-form__agreement-chekbox {
@@ -111,7 +118,7 @@
 }
 
 .callback-form__agreement-link {
-  margin-left: 5px;
+  margin-left: 3px;
 
   text-decoration: underline;
 }
