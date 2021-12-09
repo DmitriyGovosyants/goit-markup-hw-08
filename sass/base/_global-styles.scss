@@ -14,7 +14,9 @@ body {
 }
 
 body.modal-open {
-  // overflow: hidden;
+  @include mq(notDesktop) {
+    overflow: hidden;
+  }
 }
 
 h1,

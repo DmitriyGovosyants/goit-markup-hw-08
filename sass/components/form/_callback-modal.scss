@@ -33,37 +33,21 @@
       transform: translate(-50%, -50%) scale(1.1);
     }
   }
+  @media screen and (max-width: 1199px) and (max-height: 620px) and (orientation: landscape) {
+    position: static;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1);
+
+    .backdrop--hidden & {
+      transform: scale(1.1);
+    }
+  }
   @include mq(desktop) {
     max-width: 528px;
   }
 }
-.callback-modal__button-close {
-}
-
-// .callback-modal {
-//
-//
-
-//   transition: transform var(--animation-duration) var(--animation-timing-function);
-
-//   .backdrop--hidden & {
-//     transform: translate(-50%, -50%) scale(1.1);
-//   }
-
-//   @include mq(mobile) {
-//     width: 450px;
-//   }
-//   @include mq(tablet) {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-
-//     transform: translate(-50%, -50%) scale(1);
-//   }
-//   @include mq(desktop) {
-//     min-width: 528px;
-//   }
-// }
 
 .callback-modal__title {
   display: inline-block;

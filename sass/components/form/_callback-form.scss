@@ -78,6 +78,7 @@
 
 .callback-form__agreement-field {
   @extend %flex-center;
+  flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 30px;
 

@@ -36,6 +36,12 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 1199px) {
+  body.modal-open {
+    overflow: hidden;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -359,6 +365,7 @@ img {
 }
 
 .callback-form__agreement-field {
+  flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 30px;
   user-select: none;
@@ -436,6 +443,19 @@ img {
   }
   .backdrop--hidden .callback-modal {
     transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@media screen and (max-width: 1199px) and (max-height: 620px) and (orientation: landscape) {
+  .callback-modal {
+    position: static;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1);
+  }
+  .backdrop--hidden .callback-modal {
+    transform: scale(1.1);
   }
 }
 
