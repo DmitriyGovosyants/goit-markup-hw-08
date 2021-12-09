@@ -15,12 +15,8 @@
 }
 
 .portfolio__item {
-  transition: transform var(--animation-duration) var(--animation-timing-function);
-
-  @include mq(mobile-only) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
   @include mq(tablet) {
     margin: 15px;
@@ -30,6 +26,9 @@
   }
   @include mq(desktop) {
     flex-basis: calc((100% - 90px) / 3);
+  }
+  &.filter-me {
+    display: none;
   }
 }
 

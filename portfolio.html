@@ -64,27 +64,17 @@
     <main class="main-content">
       <!-- Portfolio section -->
       <section class="section">
-        <div class="container filter">
+        <div class="container">
           <h1 class="section__title section__title--hidden">Наши работы</h1>
-    
-          <input id="select-all" name="filter" type="radio" class="filter__input filter__input--check-all"
-            checked="checked" />
-          <label for="select-all" class="button button--filter button--check-all">Все</label><!--
-    
-          --><input id="select-1" name="filter" type="radio" class="filter__input filter__input--check-web" /><!--
-          --><label for="select-1" class="button button--filter button--check-web">Веб-сайты</label><!--
-    
-          --><input id="select-2" name="filter" type="radio" class="filter__input filter__input--check-app" /><!--
-          --><label for="select-2" class="button button--filter button--check-app">Приложения</label><!--
-    
-          --><input id="select-3" name="filter" type="radio" class="filter__input filter__input--check-design" /><!--
-          --><label for="select-3" class="button button--filter button--check-desing">Дизайн</label><!--
-    
-          --><input id="select-4" name="filter" type="radio" class="filter__input filter__input--check-marketing" /><!--
-          --><label for="select-4" class="button button--filter button--check-marketing">Маркетинг</label>
-    
+          <div class="filter">              
+            <button class="button button--filter" data-filter="*" type="button">Все</button>
+            <button class="button button--filter" data-filter="web-sites" type="button">Веб-сайты</button>
+            <button class="button button--filter" data-filter="apps" type="button">Приложения</button>
+            <button class="button button--filter" data-filter="design" type="button">Дизайн</button>
+            <button class="button button--filter" data-filter="marketing" type="button">Маркетинг</button>
+          </div>
           <ul class="portfolio">
-            <li class="portfolio__item portfolio__item--checked-web">
+            <li class="portfolio__item" data-filter='["web-sites"]'>
               <a class="portfolio__link" href="#!">
                 <div class="portfolio__thumb">
                   <picture>
@@ -107,7 +97,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item portfolio__item--checked-design">
+            <li class="portfolio__item" data-filter='["design"]'>
               <a class="portfolio__link" href="#!">
                 <div class="portfolio__thumb">
                   <picture>
@@ -130,7 +120,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item portfolio__item--checked-app">
+            <li class="portfolio__item" data-filter='["apps"]'>
               <a class="portfolio__link" href="#!">
                 <div class="portfolio__thumb">
                   <picture>
@@ -153,7 +143,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item portfolio__item--checked-marketing">
+            <li class="portfolio__item" data-filter='["marketing"]'>
               <a class="portfolio__link" href="#!">
                 <div class="portfolio__thumb">
                   <picture>
@@ -176,7 +166,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item portfolio__item--checked-app">
+            <li class="portfolio__item" data-filter='["apps"]'>
               <a class="portfolio__link" href="#!">
                 <div class="portfolio__thumb">
                   <picture>
@@ -199,7 +189,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item portfolio__item--checked-web">
+            <li class="portfolio__item" data-filter='["web-sites"]'>
               <a class="portfolio__link" href="#!">
                 <div class="portfolio__thumb">
                   <picture>
@@ -222,7 +212,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item portfolio__item--checked-design">
+            <li class="portfolio__item" data-filter='["design"]'>
               <a class="portfolio__link" href="#!">
                 <div class="portfolio__thumb">
                   <picture>
@@ -245,7 +235,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item portfolio__item--checked-marketing">
+            <li class="portfolio__item" data-filter='["marketing"]'>
               <a class="portfolio__link" href="#!">
                 <div class="portfolio__thumb">
                   <picture>
@@ -268,7 +258,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__item portfolio__item--checked-app">
+            <li class="portfolio__item" data-filter='["apps"]'>
               <a class="portfolio__link" href="#!">
                 <div class="portfolio__thumb">
                   <picture>
@@ -375,5 +365,9 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/filter.js"></script>  
 </body>
 </html>

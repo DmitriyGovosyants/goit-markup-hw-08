@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.section__title--hidden, .callback-form__agreement-chekbox, .filter__input {
+.section__title--hidden, .callback-form__agreement-chekbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -181,14 +181,13 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .button {
+  .button--flex {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 .button--filter {
-  display: inline-block;
   min-width: auto;
   height: 38px;
   padding: 6px 22px;
@@ -205,24 +204,13 @@ img {
   margin-right: 8px;
 }
 
-.button--filter:hover, .button--filter:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-  border: 1px transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 @media screen and (max-width: 767px) {
-  .button--check-marketing {
-    margin-bottom: 30px;
+  .button--filter:nth-child(-n + 3) {
+    margin-bottom: 15px;
   }
 }
 
-.filter__input--check-all:checked ~ .button--check-all,
-.filter__input--check-web:checked ~ .button--check-web,
-.filter__input--check-app:checked ~ .button--check-app,
-.filter__input--check-design:checked ~ .button--check-desing,
-.filter__input--check-marketing:checked ~ .button--check-marketing {
+.button--filter:hover, .button--filter:focus {
   color: #ffffff;
   background-color: #2196f3;
   border: 1px transparent;
@@ -948,17 +936,23 @@ img {
   fill: currentColor;
 }
 
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 768px) {
   .filter {
-    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
-.filter__input--check-web:checked ~ .portfolio .portfolio__item:not(.portfolio__item--checked-web),
-.filter__input--check-app:checked ~ .portfolio .portfolio__item:not(.portfolio__item--checked-app),
-.filter__input--check-design:checked ~ .portfolio .portfolio__item:not(.portfolio__item--checked-design),
-.filter__input--check-marketing:checked ~ .portfolio .portfolio__item:not(.portfolio__item--checked-marketing) {
-  display: none;
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio {
@@ -982,14 +976,8 @@ img {
   }
 }
 
-.portfolio__item {
-  transition: transform var(--animation-duration) var(--animation-timing-function);
-}
-
-@media screen and (max-width: 767px) {
-  .portfolio__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.portfolio__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1008,6 +996,10 @@ img {
   .portfolio__item {
     flex-basis: calc((100% - 90px) / 3);
   }
+}
+
+.portfolio__item.filter-me {
+  display: none;
 }
 
 .portfolio__link {
