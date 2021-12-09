@@ -76,7 +76,6 @@
 
   display: flex;
   width: 100%;
-  // padding: 24px;
   padding-right: 24px;
   padding-left: 24px;
 
@@ -106,6 +105,10 @@
   color: getColor('title-primary');
 
   overflow: hidden;
+
+  @include mq(desktop) {
+    height: $fs-l * $lh-portfolio-title * 1;
+  }
 }
 
 .portfolio__text {

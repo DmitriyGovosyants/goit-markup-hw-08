@@ -1086,6 +1086,12 @@ img {
   overflow: hidden;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio__title {
+    height: 36px;
+  }
+}
+
 .portfolio__text {
   font-size: 16px;
   line-height: 1.87;
