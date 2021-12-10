@@ -1,0 +1,53 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px; // убрать
+  background-color: getColor('bgd-primary'); // убрать
+  z-index: 999; // может не надо
+
+  transform: translateX(100%);
+  transition: transform var(--animation-duration) var(--animation-timing-function);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  @extend %flex-center;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  background-color: getColor('bgd-primary');
+
+  transition: color var(--animation-duration) var(--animation-timing-function);
+  cursor: pointer;
+
+  &:hover {
+    color: getColor('accent');
+  }
+  @include mq(tablet) {
+    display: none;
+  }
+
+  &--close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+.menu-toggle__icon-open {
+  &:hover {
+    fill: currentColor;
+  }
+}
+.menu-toggle__icon-close {
+  &:hover {
+    fill: currentColor;
+  }
+}
