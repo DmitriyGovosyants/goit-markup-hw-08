@@ -13,13 +13,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
-<body>
-  
+<body>  
   <header class="page-header">
     <div class="container page-header__сontainer">
       <a class="logo page-header__logo animate__animated animate__heartBeat" href="./index.html" lang="en">
         Web<span class="logo__second-part">Studio</span>
       </a>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon-open" width="40" height="40">
+          <use href="./images/icons.svg#icon-open-mobile-menu"></use>
+        </svg>
+      </button>
       <nav class="site-nav page-header__site-nav">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -41,25 +45,25 @@
       </nav>
       <ul class="contacts page-header__contacts">
         <li class="contacts__item">
-          <a class="contacts__link" href="mailto:info@devstudio.com">
+          <a class="contacts__link" href="mailto:bg5prod@gmail.com">
             <svg class="contacts__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-mail"></use>
             </svg>
-            info@devstudio.com
+            bg5prod@gmail.com
           </a>
         </li>
         <li class="contacts__item">
-          <a class="contacts__link" href="tel:+380961111111">
+          <a class="contacts__link" href="tel:+380967777777">
             <svg class="contacts__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-telephone"></use>
             </svg>
-            +38 096 111 11 11
+            +38 096 777 77 77
           </a>
         </li>
       </ul>
     </div>
   </header>
-
+  
   <div class="footer-fixed-wrapper">
     <main class="main-content">
       <!-- Portfolio section -->
@@ -269,7 +273,7 @@
         </div>
       </section>
     </main>
-    
+
     <footer class="page-footer">
       <div class="container page-footer__container">
         <address class="address">
@@ -284,13 +288,13 @@
               </a>
             </li>
             <li class="address__item">
-              <a class="address__contact" href="mailto:bg5production@gmail.com">
-                bg5production@gmail.com
+              <a class="address__contact" href="mailto:bg5prod@gmail.com">
+                bg5prod@gmail.com
               </a>
             </li>
             <li class="address__item">
-              <a class="address__contact" href="tel:+380991111111">
-                +38 099 111 11 11
+              <a class="address__contact" href="tel:+380993779977">
+                +38 099 377 99 77
               </a>
             </li>
           </ul>
@@ -350,6 +354,65 @@
     </footer>
   </div>
 
+  <!-- Mobile menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle menu-toggle--close js-close-menu">
+      <svg class="menu-toggle__icon-close" width="40" height="40">
+        <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu menu-container__wrap">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">
+            Студия
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--active" href="./portfolio.html">
+            Портфолио
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#!">
+            Контакты
+          </a>
+        </li>
+      </ul>
+      <a class="mobile-menu__tel" href="tel:+380967777777">
+        +38 096 777 77 77
+      </a>
+      <a class="mobile-menu__mail" href="mailto:bg5prod@gmail.com">
+        bg5prod@gmail.com
+      </a>
+      <ul class="mobile-socials mobile-menu__mobile-socials">
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="https://www.instagram.com/?hl=ru" rel="noopener noreferrer"
+            target="_blank" aria-label="instagram">
+            Instagram
+          </a>
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="https://twitter.com/?lang=ru" rel="noopener noreferrer" target="_blank"
+            aria-label="twitter">
+            Twitter
+          </a>
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank"
+            aria-label="facebook">
+            Facebook
+          </a>
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank"
+            aria-label="linkedin">
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>

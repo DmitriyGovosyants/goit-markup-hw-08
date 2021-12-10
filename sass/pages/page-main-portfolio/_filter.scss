@@ -1,6 +1,7 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -15px;
   margin-bottom: 40px;
 
   @include mq(tablet) {

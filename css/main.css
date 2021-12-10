@@ -197,6 +197,7 @@ img {
 .button--filter {
   min-width: auto;
   height: 38px;
+  margin-top: 15px;
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.63;
@@ -209,12 +210,6 @@ img {
 
 .button--filter:not(:last-child) {
   margin-right: 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .button--filter:nth-child(-n + 3) {
-    margin-bottom: 15px;
-  }
 }
 
 .button--filter:hover, .button--filter:focus {
@@ -503,22 +498,26 @@ img {
 
 .page-header__сontainer {
   display: flex;
+  align-items: center;
   height: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .page-header__сontainer {
     justify-content: space-between;
-    align-items: center;
   }
 }
 
-.page-header__site-nav {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .page-header__site-nav {
+    margin-left: 93px;
+  }
 }
 
-.page-header__contacts {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .page-header__contacts {
+    margin-left: auto;
+  }
 }
 
 .menu-container {
@@ -527,15 +526,24 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
   background-color: #ffffff;
-  z-index: 999;
   transform: translateX(100%);
   transition: transform var(--animation-duration) var(--animation-timing-function);
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+}
+
+.menu-container__wrap {
+  max-width: 480px;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .menu-toggle {
@@ -563,12 +571,86 @@ img {
   right: 15px;
 }
 
-.menu-toggle__icon-open:hover {
+.menu-toggle__icon-open:hover,
+.menu-toggle__icon-close:hover {
   fill: currentColor;
 }
 
-.menu-toggle__icon-close:hover {
-  fill: currentColor;
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu__mobile-socials {
+  margin-top: 64px;
+}
+
+.mobile-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  line-height: 1.17;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  color: #212121;
+  transition: color var(--animation-duration) var(--animation-timing-function);
+}
+
+.mobile-menu__link:hover, .mobile-menu__link:focus, .mobile-menu__link--active {
+  color: #2196f3;
+}
+
+.mobile-menu__tel {
+  display: block;
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+  line-height: 1.17;
+  color: #2196f3;
+}
+
+.mobile-menu__mail {
+  display: block;
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  line-height: 1.17;
+  color: inherit;
+}
+
+.mobile-menu__mail:hover, .mobile-menu__mail:focus {
+  color: #2196f3;
+}
+
+.mobile-socials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-socials__item {
+  margin-left: 10px;
+}
+
+.mobile-socials__item:not(:first-child)::before {
+  content: '';
+  margin-right: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.mobile-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.22;
+  color: #2196f3;
 }
 
 .site-nav {
@@ -612,7 +694,7 @@ img {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 0px;
   width: 100%;
   height: 4px;
   background-color: #2196f3;
@@ -634,15 +716,28 @@ img {
   }
 }
 
-.contacts__item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: inherit;
@@ -651,6 +746,13 @@ img {
 
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__icon {
@@ -1130,6 +1232,7 @@ img {
 .filter {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -15px;
   margin-bottom: 40px;
 }
 

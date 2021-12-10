@@ -11,12 +11,12 @@
 
 .page-header__сontainer {
   display: flex;
+  align-items: center;
 
   height: 100%;
 
-  @include mq(mobile-only) {
+  @include mq(notDesktop) {
     justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -26,9 +26,13 @@
 // }
 
 .page-header__site-nav {
-  margin-left: 93px;
+  @include mq(desktop) {
+    margin-left: 93px;
+  }
 }
 
 .page-header__contacts {
-  margin-left: auto;
+  @include mq(desktop) {
+    margin-left: auto;
+  }
 }

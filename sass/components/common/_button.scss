@@ -34,6 +34,7 @@
   &--filter {
     min-width: auto;
     height: 38px;
+    margin-top: 15px;
     padding: 6px 22px;
 
     font-weight: $fw-m;
@@ -51,12 +52,6 @@
 
   &--filter:not(:last-child) {
     margin-right: 8px;
-  }
-
-  &--filter:nth-child(-n + 3) {
-    @include mq(mobile-only) {
-      margin-bottom: 15px;
-    }
   }
 
   &--filter:hover,
