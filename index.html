@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/main.min.css" />
+  <script src="./js/webp-tracker.js"></script>
 </head>
 <body>
   <header class="page-header">
@@ -19,7 +20,7 @@
       <a class="logo page-header__logo animate__animated animate__heartBeat" href="./index.html" lang="en">
         Web<span class="logo__second-part">Studio</span>
       </a>
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="mobile-menu-open">
         <svg class="menu-toggle__icon-open" width="40" height="40">
           <use href="./images/icons.svg#icon-open-mobile-menu"></use>
         </svg>
@@ -134,8 +135,9 @@
           <li class="about__item">
             <div class="about__content">
               <picture>
+                <source srcset="./images/what-we-are-doing-1-370.webp 1x, ./images/what-we-are-doing-1-370@2x.webp 2x">
                 <source srcset="./images/what-we-are-doing-1-370.jpg 1x, ./images/what-we-are-doing-1-370@2x.jpg 2x">
-                <img src="./images/what-we-are-doing-1-370.jpg" alt="Печатает на компьютере">
+                <img src="./images/what-we-are-doing-1-370.jpg" alt="Печатает на компьютере" width="370" height="294">
               </picture>
               <p class="about__text">Десктопные приложения</p>
             </div>
@@ -143,8 +145,9 @@
           <li class="about__item">
             <div class="about__content">
               <picture>
+                <source srcset="./images/what-we-are-doing-2-370.webp 1x, ./images/what-we-are-doing-2-370@2x.webp 2x">
                 <source srcset="./images/what-we-are-doing-2-370.jpg 1x, ./images/what-we-are-doing-2-370@2x.jpg 2x">
-                <img src="./images/what-we-are-doing-2-370.jpg" alt="Смартфон в руки и ноутбук">
+                <img src="./images/what-we-are-doing-2-370.jpg" alt="Смартфон в руки и ноутбук" width="370" height="294">
               </picture>
               <p class="about__text">Мобильные приложения</p>
             </div>
@@ -152,8 +155,9 @@
           <li class="about__item">
             <div class="about__content">
               <picture>
+                <source srcset="./images/what-we-are-doing-3-370.webp 1x, ./images/what-we-are-doing-3-370@2x.webp 2x">
                 <source srcset="./images/what-we-are-doing-3-370.jpg 1x, ./images/what-we-are-doing-3-370@2x.jpg 2x">
-                <img src="./images/what-we-are-doing-3-370.jpg" alt="Планшет с палитрой цветов">
+                <img src="./images/what-we-are-doing-3-370.jpg" alt="Планшет с палитрой цветов" width="370" height="294">
               </picture>
               <p class="about__text">Дизайнерские решения</p>
             </div>
@@ -169,10 +173,13 @@
         <ul class="team">
           <li class="team__item">
             <picture>
+              <source srcset="./images/team-member-1-270.webp 1x, ./images/team-member-1-270@2x.webp 2x" media="(min-width:1200px)">
+              <source srcset="./images/team-member-1-354.webp 1x, ./images/team-member-1-354@2x.webp 2x" media="(min-width:768px)">
+              <source srcset="./images/team-member-1-450.webp 1x, ./images/team-member-1-450@2x.webp 2x">
               <source srcset="./images/team-member-1-270.jpg 1x, ./images/team-member-1-270@2x.jpg 2x" media="(min-width:1200px)">
               <source srcset="./images/team-member-1-354.jpg 1x, ./images/team-member-1-354@2x.jpg 2x" media="(min-width:768px)">
               <source srcset="./images/team-member-1-450.jpg 1x, ./images/team-member-1-450@2x.jpg 2x">
-              <img src="./images/team-member-1-450.jpg" alt="Член команды">
+              <img src="./images/team-member-1-450.jpg" alt="Член команды" width="450" height="460">
             </picture>
             <div class="team__content">
               <h3 class="team__title">Игорь Демьяненко</h3>
@@ -211,10 +218,13 @@
           </li>
           <li class="team__item">
             <picture>
+              <source srcset="./images/team-member-2-270.webp 1x, ./images/team-member-2-270@2x.webp 2x" media="(min-width:1200px)">
+              <source srcset="./images/team-member-2-354.webp 1x, ./images/team-member-2-354@2x.webp 2x" media="(min-width:768px)">
+              <source srcset="./images/team-member-2-450.webp 1x, ./images/team-member-2-450@2x.webp 2x">
               <source srcset="./images/team-member-2-270.jpg 1x, ./images/team-member-2-270@2x.jpg 2x" media="(min-width:1200px)">
               <source srcset="./images/team-member-2-354.jpg 1x, ./images/team-member-2-354@2x.jpg 2x" media="(min-width:768px)">
               <source srcset="./images/team-member-2-450.jpg 1x, ./images/team-member-2-450@2x.jpg 2x">
-              <img src="./images/team-member-2-450.jpg" alt="Член команды">
+              <img src="./images/team-member-2-450.jpg" alt="Член команды" width="450" height="460">
             </picture>
             <div class="team__content">
               <h3 class="team__title">Ольга Репина</h3>
@@ -253,10 +263,13 @@
           </li>
           <li class="team__item">
             <picture>
+              <source srcset="./images/team-member-3-270.webp 1x, ./images/team-member-3-270@2x.webp 2x" media="(min-width:1200px)">
+              <source srcset="./images/team-member-3-354.webp 1x, ./images/team-member-3-354@2x.webp 2x" media="(min-width:768px)">
+              <source srcset="./images/team-member-3-450.webp 1x, ./images/team-member-3-450@2x.webp 2x">
               <source srcset="./images/team-member-3-270.jpg 1x, ./images/team-member-3-270@2x.jpg 2x" media="(min-width:1200px)">
               <source srcset="./images/team-member-3-354.jpg 1x, ./images/team-member-3-354@2x.jpg 2x" media="(min-width:768px)">
               <source srcset="./images/team-member-3-450.jpg 1x, ./images/team-member-3-450@2x.jpg 2x">
-              <img src="./images/team-member-3-450.jpg" alt="Член команды">
+              <img src="./images/team-member-3-450.jpg" alt="Член команды" width="450" height="460">
             </picture>
             <div class="team__content">
               <h3 class="team__title">Николай Тарасов</h3>
@@ -295,10 +308,13 @@
           </li>
           <li class="team__item">
             <picture>
+              <source srcset="./images/team-member-4-270.webp 1x, ./images/team-member-4-270@2x.webp 2x" media="(min-width:1200px)">
+              <source srcset="./images/team-member-4-354.webp 1x, ./images/team-member-4-354@2x.webp 2x" media="(min-width:768px)">
+              <source srcset="./images/team-member-4-450.webp 1x, ./images/team-member-4-450@2x.webp 2x">
               <source srcset="./images/team-member-4-270.jpg 1x, ./images/team-member-4-270@2x.jpg 2x" media="(min-width:1200px)">
               <source srcset="./images/team-member-4-354.jpg 1x, ./images/team-member-4-354@2x.jpg 2x" media="(min-width:768px)">
               <source srcset="./images/team-member-4-450.jpg 1x, ./images/team-member-4-450@2x.jpg 2x">
-              <img src="./images/team-member-4-450.jpg" alt="Член команды">
+              <img src="./images/team-member-4-450.jpg" alt="Член команды" width="450" height="460">
             </picture>
             <div class="team__content">
               <h3 class="team__title">Михаил Ермаков</h3>
@@ -522,7 +538,7 @@
 
   <!-- Mobile menu -->
   <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle menu-toggle--close js-close-menu">
+    <button class="menu-toggle menu-toggle--close js-close-menu" aria-label="mobile-menu-close">
       <svg class="menu-toggle__icon-close" width="40" height="40">
         <use href="./images/icons.svg#icon-close-mobile-menu"></use>
       </svg>

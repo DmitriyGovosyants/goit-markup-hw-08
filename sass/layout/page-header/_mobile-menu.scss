@@ -11,7 +11,8 @@
 
   pointer-events: none;
   transform: scale(0);
-  transition: transform var(--animation-duration) var(--animation-timing-function);
+  transition: transform var(--animation-duration)
+    var(--animation-timing-function);
 }
 
 .menu-container.is-open {
