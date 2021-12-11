@@ -13,6 +13,13 @@ body {
   height: 100%;
 }
 
+body {
+  padding-top: 60px;
+  @include mq(tablet) {
+    padding-top: 80px;
+  }
+}
+
 body.modal-open {
   @include mq(notDesktop) {
     overflow: hidden;

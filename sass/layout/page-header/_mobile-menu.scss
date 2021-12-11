@@ -2,17 +2,21 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
+
   width: 100vw;
   height: 100vh;
+
   background-color: getColor('bgd-primary');
-  transform: scale(0);
+
   pointer-events: none;
+  transform: scale(0);
   transition: transform var(--animation-duration) var(--animation-timing-function);
 }
 
 .menu-container.is-open {
-  transform: scale(1);
   pointer-events: auto;
+  transform: scale(1);
 }
 
 .menu-container__wrap {

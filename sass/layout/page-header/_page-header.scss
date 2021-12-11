@@ -1,9 +1,16 @@
 .page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
   height: 60px;
+
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
-
+  background-color: #fff;
   @include mq(tablet) {
     height: 80px;
   }
