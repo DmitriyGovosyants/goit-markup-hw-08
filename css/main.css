@@ -151,7 +151,7 @@ img {
 .footer-fixed-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% + 1px);
 }
 
 .main-content {
