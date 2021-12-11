@@ -6,7 +6,6 @@
 
   @include mq(mobile) {
     width: 480px;
-    outline: 1px solid tomato;
   }
   @include mq(tablet) {
     width: 768px;

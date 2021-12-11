@@ -5,12 +5,14 @@
   width: 100vw;
   height: 100vh;
   background-color: getColor('bgd-primary');
-  transform: translateX(100%);
+  transform: scale(0);
+  pointer-events: none;
   transition: transform var(--animation-duration) var(--animation-timing-function);
 }
 
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: scale(1);
+  pointer-events: auto;
 }
 
 .menu-container__wrap {
@@ -75,7 +77,27 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+
+  opacity: 0;
+  transform: translateY(300%);
+  .menu-container.is-open & {
+    opacity: 1;
+    transform: translateY(0);
+    &:nth-child(1) {
+      transition: transform 500ms var(--animation-timing-function) 250ms,
+        opacity 800ms var(--animation-timing-function) 250ms;
+    }
+    &:nth-child(2) {
+      transition: transform 500ms var(--animation-timing-function) 350ms,
+        opacity 800ms var(--animation-timing-function) 250ms;
+    }
+    &:nth-child(3) {
+      transition: transform 500ms var(--animation-timing-function) 450ms,
+        opacity 800ms var(--animation-timing-function) 250ms;
+    }
+  }
 }
+
 .mobile-menu__link {
   color: getColor('text-secondary');
   transition: color var(--animation-duration) var(--animation-timing-function);
@@ -95,6 +117,12 @@
   letter-spacing: $ls-s;
   line-height: 1.17;
   color: getColor('accent');
+
+  opacity: 0;
+  .menu-container.is-open & {
+    opacity: 1;
+    transition: opacity 1000ms var(--animation-timing-function) 550ms;
+  }
 }
 .mobile-menu__mail {
   display: block;
@@ -110,18 +138,31 @@
   &:focus {
     color: getColor('accent');
   }
+
+  opacity: 0;
+  .menu-container.is-open & {
+    opacity: 1;
+    transition: opacity 1000ms var(--animation-timing-function) 550ms;
+  }
 }
 .mobile-socials {
   display: flex;
   flex-wrap: wrap;
 }
 .mobile-socials__item {
-  margin-left: 10px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
   &:not(:first-child)::before {
     content: '';
     margin-right: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
+  }
+  opacity: 0;
+  .menu-container.is-open & {
+    opacity: 1;
+    transition: opacity 1000ms var(--animation-timing-function) 550ms;
   }
 }
 .mobile-socials__link {

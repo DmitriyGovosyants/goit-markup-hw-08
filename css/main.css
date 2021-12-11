@@ -79,7 +79,6 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    outline: 1px solid tomato;
   }
 }
 
@@ -527,12 +526,14 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
-  transform: translateX(100%);
+  transform: scale(0);
+  pointer-events: none;
   transition: transform var(--animation-duration) var(--animation-timing-function);
 }
 
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: scale(1);
+  pointer-events: auto;
 }
 
 .menu-container__wrap {
@@ -590,10 +591,29 @@ img {
   font-size: 40px;
   letter-spacing: 0.02em;
   line-height: 1.17;
+  opacity: 0;
+  transform: translateY(300%);
 }
 
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.menu-container.is-open .mobile-menu__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-container.is-open .mobile-menu__item:nth-child(1) {
+  transition: transform 500ms var(--animation-timing-function) 250ms, opacity 800ms var(--animation-timing-function) 250ms;
+}
+
+.menu-container.is-open .mobile-menu__item:nth-child(2) {
+  transition: transform 500ms var(--animation-timing-function) 350ms, opacity 800ms var(--animation-timing-function) 250ms;
+}
+
+.menu-container.is-open .mobile-menu__item:nth-child(3) {
+  transition: transform 500ms var(--animation-timing-function) 450ms, opacity 800ms var(--animation-timing-function) 250ms;
 }
 
 .mobile-menu__link {
@@ -613,6 +633,12 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.17;
   color: #2196f3;
+  opacity: 0;
+}
+
+.menu-container.is-open .mobile-menu__tel {
+  opacity: 1;
+  transition: opacity 1000ms var(--animation-timing-function) 550ms;
 }
 
 .mobile-menu__mail {
@@ -623,10 +649,16 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.17;
   color: inherit;
+  opacity: 0;
 }
 
 .mobile-menu__mail:hover, .mobile-menu__mail:focus {
   color: #2196f3;
+}
+
+.menu-container.is-open .mobile-menu__mail {
+  opacity: 1;
+  transition: opacity 1000ms var(--animation-timing-function) 550ms;
 }
 
 .mobile-socials {
@@ -635,6 +667,10 @@ img {
 }
 
 .mobile-socials__item {
+  opacity: 0;
+}
+
+.mobile-socials__item:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -643,6 +679,11 @@ img {
   margin-right: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+}
+
+.menu-container.is-open .mobile-socials__item {
+  opacity: 1;
+  transition: opacity 1000ms var(--animation-timing-function) 550ms;
 }
 
 .mobile-socials__link {
