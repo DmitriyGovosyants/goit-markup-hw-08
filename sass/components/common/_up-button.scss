@@ -1,0 +1,22 @@
+.scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  z-index: 10;
+  display: none;
+
+  padding: 5px 10px;
+
+  font-size: $fs-28;
+  text-align: center;
+  color: var(--text-tertiary);
+
+  background-color: var(--bgd-secondary);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.scrollup:hover {
+  background-color: var(--accent);
+}
