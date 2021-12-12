@@ -20,23 +20,23 @@ html {
   --bgd-socials-bright-light: rgba(255, 255, 255, 0.1);
 
   //? Dark
-  --title-primary-dark: #212121;
+  --title-primary-dark: #c7c5c5;
   --title-secondary-dark: #ffffff;
 
-  --text-primary-dark: #757575;
-  --text-secondary-dark: #212121;
-  --text-tertiary-dark: #ffffff;
+  --text-primary-dark: #e0ffff;
+  --text-secondary-dark: #b19f9f;
+  --text-tertiary-dark: #788497;
 
-  --accent-dark: #2196f3;
-  --logo-primary-dark: #000000;
-  --logo-secondary-dark: #ffffff;
+  --accent-dark: rgb(199, 199, 236); // #bbc9d8
+  --logo-primary-dark: #2196f3;
+  --logo-secondary-dark: #2196f3;
   --icon-primary-dark: #afb1b8;
 
-  --bgd-primary-dark: #ffffff;
-  --bgd-secondary-dark: #2f303a;
-  --bgd-tertiary-dark: #f5f4fa;
-  --bgd-button-focus-dark: #188ce8;
-  --bgd-socials-bright-dark: rgba(255, 255, 255, 0.1);
+  --bgd-primary-dark: #2b2d31;
+  --bgd-secondary-dark: #212121;
+  --bgd-tertiary-dark: #5c586b;
+  --bgd-button-focus-dark: rgba(237, 243, 243, 0.993);
+  --bgd-socials-bright-dark: rgb(197, 169, 169);
 }
 
 :root {

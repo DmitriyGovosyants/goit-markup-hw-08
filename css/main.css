@@ -322,20 +322,20 @@ html {
   --bgd-tertiary-light: #f5f4fa;
   --bgd-button-focus-light: #188ce8;
   --bgd-socials-bright-light: rgba(255, 255, 255, 0.1);
-  --title-primary-dark: #212121;
+  --title-primary-dark: #c7c5c5;
   --title-secondary-dark: #ffffff;
-  --text-primary-dark: #757575;
-  --text-secondary-dark: #212121;
-  --text-tertiary-dark: #ffffff;
-  --accent-dark: #2196f3;
-  --logo-primary-dark: #000000;
-  --logo-secondary-dark: #ffffff;
+  --text-primary-dark: #e0ffff;
+  --text-secondary-dark: #b19f9f;
+  --text-tertiary-dark: #788497;
+  --accent-dark: rgb(199, 199, 236);
+  --logo-primary-dark: #2196f3;
+  --logo-secondary-dark: #2196f3;
   --icon-primary-dark: #afb1b8;
-  --bgd-primary-dark: #ffffff;
-  --bgd-secondary-dark: #2f303a;
-  --bgd-tertiary-dark: #f5f4fa;
-  --bgd-button-focus-dark: #188ce8;
-  --bgd-socials-bright-dark: rgba(255, 255, 255, 0.1);
+  --bgd-primary-dark: #2b2d31;
+  --bgd-secondary-dark: #212121;
+  --bgd-tertiary-dark: #5c586b;
+  --bgd-button-focus-dark: rgba(237, 243, 243, 0.993);
+  --bgd-socials-bright-dark: rgb(197, 169, 169);
 }
 
 :root {
@@ -771,7 +771,6 @@ img {
   width: 100%;
   height: 40px;
   padding: 0 42px;
-  background-color: var(--bgd-primary);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -801,7 +800,6 @@ img {
   padding: 11px 15px;
   font-size: 12px;
   line-height: 1.17;
-  background-color: var(--bgd-primary);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -955,7 +953,7 @@ img {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
-  background-color: #fff;
+  background-color: var(--bgd-primary);
 }
 
 @media screen and (min-width: 768px) {
@@ -1056,7 +1054,7 @@ img {
 }
 
 .mobile-menu__mobile-socials {
-  margin-top: 64px;
+  margin-top: 54px;
 }
 
 .mobile-menu__item {
@@ -1140,11 +1138,12 @@ img {
 }
 
 .mobile-socials__item {
+  margin-top: 10px;
   opacity: 0;
 }
 
-.mobile-socials__item:not(:first-child) {
-  margin-left: 10px;
+.mobile-socials__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .mobile-socials__item:not(:first-child)::before {

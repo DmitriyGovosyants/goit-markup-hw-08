@@ -10,7 +10,7 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
-  background-color: #fff;
+  background-color: var(--bgd-primary);
   @include mq(tablet) {
     height: 80px;
   }
@@ -26,11 +26,6 @@
     justify-content: space-between;
   }
 }
-
-// .page-header__logo {
-//   padding-top: 24px;
-//   padding-bottom: 25px;
-// }
 
 .page-header__site-nav {
   @include mq(desktop) {
