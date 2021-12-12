@@ -1,0 +1,19 @@
+.contact-details {
+  text-align: center;
+}
+.contact-details__item {
+  margin-bottom: 40px;
+}
+.contact-details__title {
+  margin-bottom: 20px;
+  color: getColor('text-secondary');
+}
+.contact-details__link {
+  font-size: $fs-2xl-up;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
+}

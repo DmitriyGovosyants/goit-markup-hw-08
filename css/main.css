@@ -420,6 +420,10 @@ img {
   background-color: #f5f4fa;
 }
 
+.section--bgd-elements-color {
+  background-color: #2f303a;
+}
+
 @media screen and (max-width: 1199px) {
   .section--hidden {
     display: none;
@@ -472,11 +476,11 @@ img {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: #2196f3;
-  animation: anim 1000ms linear;
+  animation: logo-anim 1000ms linear;
   animation-iteration-count: 1;
 }
 
-@keyframes anim {
+@keyframes logo-anim {
   25% {
     transform: scale(1.3);
   }
@@ -1313,6 +1317,207 @@ img {
 
 .subscribe__icon {
   margin-left: 10px;
+}
+
+.contact-details {
+  text-align: center;
+}
+
+.contact-details__item {
+  margin-bottom: 40px;
+}
+
+.contact-details__title {
+  margin-bottom: 20px;
+  color: #212121;
+}
+
+.contact-details__link {
+  font-size: 28px;
+  color: inherit;
+}
+
+.contact-details__link:hover, .contact-details__link:focus {
+  color: #2196f3;
+}
+
+.animation-drip-drop {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 800px;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translatex(-50%);
+}
+
+@media screen and (max-width: 1199px) {
+  .animation-drip-drop {
+    display: none;
+  }
+}
+
+.animation-drip-drop__drop {
+  position: relative;
+  top: -30px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #2196f3;
+  border-radius: 20px;
+  animation-name: drip;
+  animation-timing-function: cubic-bezier(1, 0, 0.91, 0.19);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.animation-drip-drop__drop:before {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 30px solid #2196f3;
+}
+
+.animation-drip-drop__wave {
+  position: absolute;
+  opacity: 0;
+  top: 700px;
+  left: 300px;
+  width: 2px;
+  height: 1px;
+  border: #2196f3 7px solid;
+  border-radius: 300px / 150px;
+  animation-name: ripple;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.animation-drip-drop__wave:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 2px;
+  height: 1px;
+  border: #2196f3 5px solid;
+  border-radius: 300px / 150px;
+  opacity: 0;
+  animation-name: ripple-2;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes drip {
+  to {
+    top: 700px;
+  }
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+  }
+  to {
+    top: 500px;
+    left: 0;
+    width: 600px;
+    height: 300px;
+    border-width: 1px;
+    opacity: 0;
+  }
+}
+
+@keyframes ripple-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    top: 100px;
+    left: 200px;
+    width: 200px;
+    height: 100px;
+    border-width: 1px;
+  }
+}
+
+#slider {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.slider-elements {
+  position: relative;
+}
+
+.slider-elements__item {
+  position: relative;
+  float: left;
+  display: block;
+  width: 800px;
+  height: 600px;
+}
+
+.slider-elements-prev,
+.slider-elements-next {
+  position: absolute;
+  top: 84%;
+  z-index: 1;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: color var(--animation-duration) var(--animation-timing-function);
+}
+
+.slider-elements-prev:hover,
+.slider-elements-next:hover,
+.slider-elements-prev:focus,
+.slider-elements-next:focus {
+  color: #2196f3;
+  opacity: 1;
+}
+
+.slider-elements-prev {
+  left: 10px;
+}
+
+.slider-elements-next {
+  right: 10px;
+}
+
+.slider-elements__text {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transform: translateX(-50%);
+}
+
+.power {
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
 .hero {

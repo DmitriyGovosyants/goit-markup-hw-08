@@ -1,0 +1,126 @@
+.animation-drip-drop {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 800px;
+
+  pointer-events: none;
+  overflow: hidden;
+  transform: translatex(-50%);
+
+  @include mq(notDesktop) {
+    display: none;
+  }
+}
+
+.animation-drip-drop__drop {
+  position: relative;
+  top: -30px;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: getColor('accent');
+  border-radius: 20px;
+
+  animation-name: drip;
+  animation-timing-function: cubic-bezier(1, 0, 0.91, 0.19);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.animation-drip-drop__drop:before {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 0;
+
+  width: 0;
+  height: 0;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 30px solid getColor('accent');
+}
+
+.animation-drip-drop__wave {
+  position: absolute;
+  opacity: 0;
+  top: 700px;
+  left: 300px;
+
+  width: 2px;
+  height: 1px;
+
+  border: getColor('accent') 7px solid;
+  border-radius: 300px / 150px;
+
+  animation-name: ripple;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.animation-drip-drop__wave:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+
+  width: 2px;
+  height: 1px;
+
+  border: getColor('accent') 5px solid;
+  border-radius: 300px / 150px;
+
+  opacity: 0;
+  animation-name: ripple-2;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes drip {
+  to {
+    top: 700px;
+  }
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+  }
+  to {
+    top: 500px;
+    left: 0;
+
+    width: 600px;
+    height: 300px;
+
+    border-width: 1px;
+    opacity: 0;
+  }
+}
+
+@keyframes ripple-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    top: 100px;
+    left: 200px;
+
+    width: 200px;
+    height: 100px;
+
+    border-width: 1px;
+  }
+}

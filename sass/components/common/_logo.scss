@@ -5,9 +5,9 @@
   letter-spacing: $ls-m;
   color: getColor('accent');
 
-  animation: anim 1000ms linear;
+  animation: logo-anim 1000ms linear;
   animation-iteration-count: 1;
-  @keyframes anim {
+  @keyframes logo-anim {
     25% {
       transform: scale(1.3);
     }

@@ -22,6 +22,10 @@
     background-color: getColor('bgd-tertiary');
   }
 
+  &--bgd-elements-color {
+    background-color: getColor('bgd-secondary');
+  }
+
   @include mq(notDesktop) {
     &--hidden {
       display: none;

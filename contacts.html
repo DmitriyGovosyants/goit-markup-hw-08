@@ -62,8 +62,89 @@
 
   <div class="footer-fixed-wrapper">
     <main class="main-content">
-      <!-- Hero section -->
-      
+      <!-- Contacts section -->
+      <section class="section">
+        <div class="container">
+          <h1 class="section__title">Контактная информация</h1>
+          <ul class="contact-details" >
+            <li class="contact-details__item">
+              <h2 class="contact-details__title">Клиент-менеджер</h2>
+              <a class="contact-details__link" href="tel:+380967777777">
+                +38 096 777 77 77
+              </a>
+            </li>
+            <li class="contact-details__item">
+              <h2 class="contact-details__title">Центральный офис</h2>
+              <a class="contact-details__link" href="tel:+380993779977">
+                +38 099 377 99 77
+              </a>
+            </li>
+            <li class="contact-details__item">
+              <h2 class="contact-details__title">Тех-поддержка</h2>
+              <a class="contact-details__link" href="tel:+380961131717">
+                +38 096 113 17 17
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      <!-- Power section -->
+      <section class="section section--bgd-elements-color section--hidden">
+        <p class="section__title power" lang="en">Our Power</p>
+        <div id="slider">
+          <a href="#" class="slider-elements-next" onclick="return false;">&gt;</a>
+          <a href="#" class="slider-elements-prev" onclick="return false;">&lt;</a>
+          <ul class="slider-elements">
+            <li class="slider-elements__item">
+              <picture>
+                <source srcset="./images/fire-800.webp 1x, ./images/fire-800@2x.webp 2x"
+                  type="image/webp">
+                <source srcset="./images/fire-800.jpg 1x, ./images/fire-800@2x.jpg 2x">
+                <img src="./images/fire-800.jpg" alt="огонь" width="800" height="600">
+              </picture>
+              <b class="slider-elements__text" lang="en">Fire</b>
+            </li>
+            <li class="slider-elements__item">
+              <picture>
+                <source srcset="./images/metal-800.webp 1x, ./images/metal-800@2x.webp 2x" type="image/webp">
+                <source srcset="./images/metal-800.jpg 1x, ./images/metal-800@2x.jpg 2x">
+                <img src="./images/metal-800.jpg" alt="металл" width="800" height="600">
+              </picture>
+              <b class="slider-elements__text" lang="en">Metal</b>
+            </li>
+            <li class="slider-elements__item">
+              <picture>
+                <source srcset="./images/water-800.webp 1x, ./images/water-800@2x.webp 2x" type="image/webp">
+                <source srcset="./images/water-800.jpg 1x, ./images/water-800@2x.jpg 2x">
+                <img src="./images/water-800.jpg" alt="вода" width="800" height="600">
+              </picture>
+              <b class="slider-elements__text" lang="en">Water</b>
+            </li>
+            <li class="slider-elements__item">
+              <picture>
+                <source srcset="./images/wood-800.webp 1x, ./images/wood-800@2x.webp 2x" type="image/webp">
+                <source srcset="./images/wood-800.jpg 1x, ./images/wood-800@2x.jpg 2x">
+                <img src="./images/wood-800.jpg" alt="дерево" width="800" height="600">
+              </picture>
+              <b class="slider-elements__text" lang="en">Wood</b>
+            </li>
+            <li class="slider-elements__item">
+              <picture>
+                <source srcset="./images/earth-800.webp 1x, ./images/earth-800@2x.webp 2x" type="image/webp">
+                <source srcset="./images/earth-800.jpg 1x, ./images/earth-800@2x.jpg 2x">
+                <img src="./images/earth-800.jpg" alt="земля" width="800" height="600">
+              </picture>
+              <b class="slider-elements__text" lang="en">Earth</b>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Drop animation -->
+      <div class="animation-drip-drop">
+        <div class="animation-drip-drop__drop"></div>
+        <div class="animation-drip-drop__wave"></div>
+      </div>
     </main>
     
     <footer class="page-footer">
@@ -204,12 +285,13 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> 
 
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-  <script defer src="js/mobile-menu.js"></script>  
+  <script defer src="./js/mobile-menu.js"></script>
+  <script defer src="./js/slider-elements.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
 </body>
