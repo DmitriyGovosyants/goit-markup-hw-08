@@ -3,7 +3,7 @@
     filterGroup: '.portfolio',
     filterNode: '.portfolio__item',
     filterButtonGroup: '.filter',
-    transitionSpeed: '0s'
+    transitionSpeed: '0ms'
   });
 
   function DataFilterJS(config){

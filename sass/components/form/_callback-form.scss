@@ -7,7 +7,7 @@
   align-items: flex-start;
 
   font-size: $fs-12;
-  letter-spacing: ls-01;
+  letter-spacing: $ls-01;
 
   &:not(:first-child) {
     margin-top: 10px;
@@ -64,9 +64,9 @@
   border-radius: 4px;
   outline: none;
 
+  resize: none;
   transition: border-color var(--animation-duration)
     var(--animation-timing-function);
-  resize: none;
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);

@@ -1,3 +1,31 @@
+//? FONT variables
+// font-weight
+$fw-500: 500;
+$fw-700: 700;
+$fw-900: 900;
+// font-size
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-24: 24px;
+$fs-26: 26px;
+$fs-28: 28px;
+$fs-34: 34px;
+$fs-36: 36px;
+$fs-40: 40px;
+$fs-44: 44px;
+$fs-60: 60px;
+// letter-spacing
+$ls-01: 0.01em;
+$ls-02: 0.02em;
+$ls-03: 0.03em;
+$ls-06: 0.06em;
+// letter-height
+$lh-2-00: 2;
+
+//? COLOR variables
 html {
   //* Color theme
   //? Light
@@ -27,7 +55,7 @@ html {
   --text-secondary-dark: #b19f9f;
   --text-tertiary-dark: #788497;
 
-  --accent-dark: rgb(199, 199, 236); // #bbc9d8
+  --accent-dark: rgb(199, 199, 236);
   --logo-primary-dark: #2196f3;
   --logo-secondary-dark: #2196f3;
   --icon-primary-dark: #afb1b8;
@@ -40,10 +68,11 @@ html {
 }
 
 :root {
-  //* Animation
+  //? ANIMATION
   --animation-duration: 250ms;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  //? COLOR
   color-scheme: light;
   //? set defaults
   --title-primary: var(--title-primary-light);
@@ -108,67 +137,3 @@ html {
   --bgd-button-focus: var(--bgd-button-focus-dark);
   --bgd-socials-bright: var(--bgd-socials-bright-dark);
 }
-
-// --title-primary: #212121;
-// --title-secondary: #ffffff;
-
-// --text-primary: #757575;
-// --text-secondary: #212121;
-// --text-tertiary: #ffffff;
-
-// --accent: #2196f3;
-// --logo-primary: #000000;
-// --logo-secondary: #ffffff;
-// --icon-primary: #afb1b8;
-
-// --bgd-primary: #ffffff;
-// --bgd-secondary: #2f303a;
-// --bgd-tertiary: #f5f4fa;
-// --bgd-button-focus: #188ce8;
-// --bgd-socials-light: rgba(255, 255, 255, 0.1);
-
-// $colors-ua-theme: (
-//   'title-primary': #212121,
-//   'title-secondary': #ffffff,
-//   'text-primary': #757575,
-//   'text-secondary': #212121,
-//   'text-tertiary': #ffffff,
-//   'accent': #0082d1,
-//   'logo-primary': #ffd100,
-//   'logo-secondary': #ffd100,
-//   'icon-primary': #afb1b8,
-//   'bgd-primary': #ffffff,
-//   'bgd-secondary': #2f303a,
-//   'bgd-tertiary': #f5f4fa,
-//   'bgd-button-focus': #ffd100,
-//   'bgd-socials-light': rgba(255, 255, 255, 0.1),
-// );
-
-// font-weight
-$fw-500: 500;
-$fw-700: 700;
-$fw-900: 900;
-
-// font-size
-$fs-12: 12px;
-$fs-14: 14px;
-$fs-16: 16px;
-$fs-18: 18px;
-$fs-20: 20px;
-$fs-24: 24px;
-$fs-26: 26px;
-$fs-28: 28px;
-$fs-34: 34px;
-$fs-36: 36px;
-$fs-40: 40px;
-$fs-44: 44px;
-$fs-60: 60px;
-
-// letter-spacing
-$ls-01: 0.01em;
-$ls-02: 0.02em;
-$ls-03: 0.03em;
-$ls-06: 0.06em;
-
-// letter-height
-$lh-2-00: 2;

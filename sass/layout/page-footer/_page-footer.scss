@@ -14,10 +14,9 @@
     display: flex;
     align-items: baseline;
   }
+
   @include mq(tablet-only) {
     flex-wrap: wrap;
     justify-content: center;
-  }
-  @include mq(desktop) {
   }
 }

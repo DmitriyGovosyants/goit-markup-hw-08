@@ -2,12 +2,12 @@
   position: absolute;
   top: 10px;
   right: 10px;
+
   display: flex;
 }
 
 .theme-switcher__field {
-  // display: flex;
-
+  display: flex;
   &:nth-child(1) {
     margin-right: 15px;
     color: var(--text-tertiary);
@@ -17,9 +17,18 @@
   }
 }
 .theme-switcher__input {
+  display: none;
 }
 .theme-switcher__label {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: $fw-700;
+  font-size: $fs-16;
+  letter-spacing: $ls-03;
+  padding: 10px;
+
+  cursor: pointer;
+
+  &:hover {
+    color: var(--accent);
+  }
 }

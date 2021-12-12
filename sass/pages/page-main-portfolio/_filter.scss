@@ -8,6 +8,7 @@
     justify-content: center;
     margin-bottom: 30px;
   }
+
   @include mq(desktop) {
     margin-bottom: 50px;
   }

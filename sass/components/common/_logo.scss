@@ -7,6 +7,7 @@
 
   animation: logo-anim 1000ms linear;
   animation-iteration-count: 1;
+
   @keyframes logo-anim {
     25% {
       transform: scale(1.3);

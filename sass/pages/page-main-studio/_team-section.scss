@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   @include mq(tablet-only) {
     margin: -15px;
   }
@@ -17,15 +18,18 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
   @include mq(mobile-only) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
+
   @include mq(tablet-only) {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
   }
+
   @include mq(desktop) {
     flex-basis: calc((100% - 90px) / 4);
 
@@ -41,6 +45,7 @@
   @include mq(notDesktop) {
     padding-bottom: 24px;
   }
+
   @include mq(desktop) {
     padding-bottom: 30px;
   }

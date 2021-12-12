@@ -155,8 +155,10 @@ body.webp-false .hero {
   @include mq(tablet) {
     width: 49%;
   }
+
   @include mq(desktop) {
     width: 59%;
+
     font-size: $fs-44;
     line-height: 1.36;
   }

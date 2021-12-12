@@ -1,6 +1,7 @@
 .site-nav {
   display: flex;
   align-items: center;
+
   @include mq(mobile-only) {
     display: none;
   }

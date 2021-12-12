@@ -50,7 +50,6 @@
 
 .animation-drip-drop__wave {
   position: absolute;
-  opacity: 0;
   top: 700px;
   left: 300px;
 
@@ -60,6 +59,7 @@
   border: var(--accent) 7px solid;
   border-radius: 300px / 150px;
 
+  opacity: 0;
   animation-name: ripple;
   animation-delay: 2s;
   animation-duration: 2s;
@@ -103,6 +103,7 @@
     height: 300px;
 
     border-width: 1px;
+
     opacity: 0;
   }
 }

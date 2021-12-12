@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   @include mq(tablet-only) {
     margin: -15px;
   }
@@ -16,10 +17,12 @@
       margin-bottom: 30px;
     }
   }
+
   @include mq(tablet-only) {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
   }
+
   @include mq(desktop) {
     flex-basis: calc((100% - 90px) / 4);
 
@@ -47,7 +50,6 @@
   font-weight: $fw-700;
   font-size: $fs-14;
   line-height: 1.17;
-
   text-transform: uppercase;
   color: var(--title-primary);
 

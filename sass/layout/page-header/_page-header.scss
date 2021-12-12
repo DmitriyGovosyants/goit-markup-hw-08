@@ -7,10 +7,11 @@
   width: 100%;
   height: 60px;
 
+  background-color: var(--bgd-primary);
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
-  background-color: var(--bgd-primary);
+
   @include mq(tablet) {
     height: 80px;
   }
