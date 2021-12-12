@@ -1858,6 +1858,21 @@ body.webp-false .hero {
   fill: currentColor;
 }
 
+.clients-animation-added {
+  animation-name: wipe-enter;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes wipe-enter {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
 .filter {
   display: flex;
   flex-wrap: wrap;
