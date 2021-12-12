@@ -1,7 +1,9 @@
 .button-close {
-  @extend %flex-center;
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: inherit;
   border-radius: 50%;

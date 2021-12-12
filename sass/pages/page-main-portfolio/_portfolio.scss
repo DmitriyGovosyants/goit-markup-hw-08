@@ -36,11 +36,13 @@
   display: block;
   width: 100%;
 
-  transition: box-shadow var(--animation-duration) var(--animation-timing-function);
+  transition: box-shadow var(--animation-duration)
+    var(--animation-timing-function);
 
   &:hover,
   &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -60,7 +62,8 @@
 
   background-color: rgba(33, 150, 243, 0.9);
 
-  transition: transform var(--animation-duration) var(--animation-timing-function);
+  transition: transform var(--animation-duration)
+    var(--animation-timing-function);
 
   .portfolio__link:hover &,
   .portfolio__link:focus & {
@@ -79,9 +82,9 @@
   padding-right: 24px;
   padding-left: 24px;
 
-  font-size: $fs-l;
+  font-size: $fs-18;
   line-height: 1.56;
-  letter-spacing: $ls-m;
+  letter-spacing: $ls-03;
 
   color: getColor('text-tertiary');
 }
@@ -95,25 +98,25 @@
 }
 
 .portfolio__title {
-  height: $fs-l * $lh-portfolio-title * 2;
+  height: $fs-18 * $lh-2-00 * 2;
   margin-bottom: 4px;
 
-  font-weight: $fw-l;
-  font-size: $fs-l;
-  line-height: $lh-portfolio-title;
-  letter-spacing: $ls-l;
+  font-weight: $fw-700;
+  font-size: $fs-18;
+  line-height: $lh-2-00;
+  letter-spacing: $ls-06;
   color: getColor('title-primary');
 
   overflow: hidden;
 
   @include mq(desktop) {
-    height: $fs-l * $lh-portfolio-title * 1;
+    height: $fs-18 * $lh-2-00 * 1;
   }
 }
 
 .portfolio__text {
-  font-size: $fs-m;
+  font-size: $fs-16;
   line-height: 1.87;
-  letter-spacing: $ls-m;
+  letter-spacing: $ls-03;
   color: getColor('text-primary');
 }

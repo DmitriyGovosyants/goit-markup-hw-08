@@ -1,6 +1,6 @@
 .team {
-  font-size: $fs-m;
-  letter-spacing: $ls-m;
+  font-size: $fs-16;
+  letter-spacing: $ls-03;
   text-align: center;
 
   @include mq(tablet) {
@@ -49,9 +49,9 @@
 .team__title {
   margin-bottom: 10px;
 
-  font-weight: $fw-m;
-  font-size: $fs-m;
-  letter-spacing: $ls-m;
+  font-weight: $fw-500;
+  font-size: $fs-16;
+  letter-spacing: $ls-03;
   color: getColor('title-primary');
 }
 

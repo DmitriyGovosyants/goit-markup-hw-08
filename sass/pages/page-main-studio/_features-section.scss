@@ -30,7 +30,9 @@
 }
 
 .features__inner {
-  @extend %flex-center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
@@ -42,8 +44,8 @@
 .features__title {
   margin-bottom: 10px;
 
-  font-weight: $fw-l;
-  font-size: $fs-s;
+  font-weight: $fw-700;
+  font-size: $fs-14;
   line-height: 1.17;
 
   text-transform: uppercase;

@@ -1,8 +1,8 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: $fs-s;
+  font-size: $fs-14;
   line-height: 1.17;
-  letter-spacing: $ls-m;
+  letter-spacing: $ls-03;
   color: getColor('text-primary');
 
   background-color: getColor('bgd-primary');
@@ -18,11 +18,10 @@ body {
   @include mq(tablet) {
     padding-top: 80px;
   }
-}
-
-body.modal-open {
-  @include mq(notDesktop) {
-    overflow: hidden;
+  &.modal-open {
+    @include mq(notDesktop) {
+      overflow: hidden;
+    }
   }
 }
 

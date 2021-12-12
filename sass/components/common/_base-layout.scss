@@ -41,9 +41,9 @@
 }
 
 .section__title {
-  font-weight: $fw-l;
-  font-size: $fs-2xl-up;
-  letter-spacing: $ls-m;
+  font-weight: $fw-700;
+  font-size: $fs-28;
+  letter-spacing: $ls-03;
   text-align: center;
 
   color: getColor('title-primary');
@@ -57,7 +57,7 @@
   }
   @include mq(desktop) {
     margin-bottom: 50px;
-    font-size: $fs-3xl;
+    font-size: $fs-36;
   }
 }
 

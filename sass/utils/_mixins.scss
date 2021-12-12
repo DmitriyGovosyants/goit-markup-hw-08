@@ -39,8 +39,12 @@
   }
 }
 
-@mixin flex-c-c {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// @mixin font($fs: 14px, $fw: 400, $lh: 1.4, $ls: 0.03em) {
+//   font-size: $fz;
+//   font-weight: $fw;
+//   line-height: $lh;
+//   letter-spacing: $ls;
+// }
+
+// @include font(40px, 700, 1.4, 0.06em);
+// @include font($lh: 1.4, $ls: 0.01em);

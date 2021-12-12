@@ -144,10 +144,10 @@ body.webp-false .hero {
   margin-left: auto;
   margin-bottom: 30px;
 
-  font-weight: $fw-xl;
-  font-size: $fs-2xl;
+  font-weight: $fw-900;
+  font-size: $fs-26;
   line-height: 1.62;
-  letter-spacing: $ls-l;
+  letter-spacing: $ls-06;
   text-transform: uppercase;
   color: getColor('title-secondary');
 
@@ -156,7 +156,7 @@ body.webp-false .hero {
   }
   @include mq(desktop) {
     width: 59%;
-    font-size: $fs-4xl;
+    font-size: $fs-44;
     line-height: 1.36;
   }
 }

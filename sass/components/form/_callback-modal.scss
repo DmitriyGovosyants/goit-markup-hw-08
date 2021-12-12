@@ -4,11 +4,13 @@
   text-align: center;
 
   background: getColor('bgd-primary');
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transform: scale(1);
-  transition: transform var(--animation-duration) var(--animation-timing-function);
+  transition: transform var(--animation-duration)
+    var(--animation-timing-function);
 
   .backdrop--hidden & {
     transform: scale(1.1);
@@ -53,10 +55,10 @@
   display: inline-block;
   margin-bottom: 12px;
 
-  font-weight: $fw-l;
-  font-size: $fs-xl;
+  font-weight: $fw-700;
+  font-size: $fs-20;
   line-height: 1.5;
-  letter-spacing: $ls-m;
+  letter-spacing: $ls-03;
   color: getColor('title-primary');
 
   @include mq(desktop) {

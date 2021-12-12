@@ -312,12 +312,6 @@ summary {
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button--flex, .button-close, .socials, .socials__link, .callback-form__agreement-field, .menu-toggle, .features__inner, .about__text, .clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .section__title--hidden, .callback-form__agreement-chekbox {
   position: absolute;
   white-space: nowrap;
@@ -525,6 +519,12 @@ img {
   background-color: #188ce8;
 }
 
+.button--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1199px) {
   .button--flex {
     margin-left: auto;
@@ -560,6 +560,9 @@ img {
 .button-close {
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: inherit;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -575,6 +578,12 @@ img {
   fill: currentColor;
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .socials__item {
   width: 44px;
   height: 44px;
@@ -585,6 +594,9 @@ img {
 }
 
 .socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   color: #afb1b8;
@@ -637,7 +649,7 @@ img {
   flex-direction: column;
   align-items: flex-start;
   font-size: 12px;
-  letter-spacing: 0.01em;
+  letter-spacing: ls-01;
 }
 
 .callback-form__field:not(:first-child) {
@@ -700,6 +712,9 @@ img {
 }
 
 .callback-form__agreement-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -895,6 +910,9 @@ img {
 }
 
 .menu-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   border: 0;
@@ -1673,6 +1691,9 @@ body.webp-false .hero {
 }
 
 .features__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
@@ -1715,6 +1736,9 @@ body.webp-false .hero {
   position: absolute;
   left: 0;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 70px;
   font-weight: 700;
@@ -1841,6 +1865,9 @@ body.webp-false .hero {
 }
 
 .clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   color: #afb1b8;

@@ -32,7 +32,9 @@
 }
 
 .menu-toggle {
-  @extend %flex-center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 
@@ -74,9 +76,9 @@
 .mobile-menu__list {
 }
 .mobile-menu__item {
-  font-weight: $fw-m;
-  font-size: $fs-3xl-up;
-  letter-spacing: $ls-s;
+  font-weight: $fw-500;
+  font-size: $fs-40;
+  letter-spacing: $ls-02;
   line-height: 1.17;
 
   &:not(:last-child) {
@@ -117,9 +119,9 @@
   display: block;
   margin-top: auto;
 
-  font-weight: $fw-m;
-  font-size: $fs-2xl-2up;
-  letter-spacing: $ls-s;
+  font-weight: $fw-500;
+  font-size: $fs-34;
+  letter-spacing: $ls-02;
   line-height: 1.17;
   color: getColor('accent');
 
@@ -133,9 +135,9 @@
   display: block;
   margin-top: 32px;
 
-  font-weight: $fw-m;
-  font-size: $fs-2xl-dn;
-  letter-spacing: $ls-s;
+  font-weight: $fw-500;
+  font-size: $fs-24;
+  letter-spacing: $ls-02;
   line-height: 1.17;
   color: inherit;
 
@@ -171,9 +173,9 @@
   }
 }
 .mobile-socials__link {
-  font-weight: $fw-m;
-  font-size: $fs-l;
-  letter-spacing: $ls-s;
+  font-weight: $fw-500;
+  font-size: $fs-18;
+  letter-spacing: $ls-02;
   line-height: 1.22;
   color: getColor('accent');
 }

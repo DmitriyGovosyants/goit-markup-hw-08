@@ -28,8 +28,8 @@
 
   padding: 10px 20px;
 
-  font-weight: $fw-l;
-  font-size: $fs-5xl;
+  font-weight: $fw-700;
+  font-size: $fs-60;
   color: getColor('text-tertiary');
 
   opacity: 0.8;
@@ -59,7 +59,7 @@
   top: 90%;
   left: 50%;
 
-  font-size: $fs-3xl-up;
+  font-size: $fs-40;
   text-transform: uppercase;
   color: getColor('text-tertiary');
 
@@ -67,8 +67,8 @@
 }
 
 .power {
-  font-weight: $fw-l;
-  font-size: $fs-5xl;
+  font-weight: $fw-700;
+  font-size: $fs-60;
   color: getColor('text-tertiary');
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
