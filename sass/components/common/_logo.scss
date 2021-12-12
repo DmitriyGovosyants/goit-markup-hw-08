@@ -4,6 +4,23 @@
   font-size: $fs-2xl;
   letter-spacing: $ls-m;
   color: getColor('accent');
+
+  animation: anim 1000ms linear;
+  animation-iteration-count: 1;
+  @keyframes anim {
+    25% {
+      transform: scale(1.3);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 
 .logo__second-part {
