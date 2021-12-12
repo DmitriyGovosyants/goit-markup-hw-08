@@ -537,6 +537,7 @@ img {
 }
 
 .section__title--power {
+  font-weight: 700;
   font-size: 60px;
   color: var(--text-tertiary);
   text-transform: uppercase;
