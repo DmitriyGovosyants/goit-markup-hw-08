@@ -16,9 +16,11 @@
     color: var(--text-primary);
   }
 }
+
 .theme-switcher__input {
   display: none;
 }
+
 .theme-switcher__label {
   font-family: 'Raleway', sans-serif;
   font-weight: $fw-700;
@@ -30,5 +32,11 @@
 
   &:hover {
     color: var(--accent);
+  }
+
+  .theme-switcher__input:checked ~ & {
+    box-shadow: 5px 5px 10px rgba(241, 233, 233, 0.829),
+      -5px -5px 10px rgba(241, 233, 233, 0.829);
+    border-radius: 8px;
   }
 }
