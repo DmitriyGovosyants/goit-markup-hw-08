@@ -7,7 +7,7 @@
   width: 100vw;
   height: 100vh;
 
-  background-color: getColor('bgd-primary');
+  background-color: var(--bgd-primary);
 
   pointer-events: none;
   transform: scale(0);
@@ -39,13 +39,13 @@
   padding: 0;
 
   border: 0;
-  background-color: getColor('bgd-primary');
+  background-color: var(--bgd-primary);
 
   transition: color var(--animation-duration) var(--animation-timing-function);
   cursor: pointer;
 
   &:hover {
-    color: getColor('accent');
+    color: var(--accent);
   }
   @include mq(tablet) {
     display: none;
@@ -106,13 +106,13 @@
 }
 
 .mobile-menu__link {
-  color: getColor('text-secondary');
+  color: var(--text-secondary);
   transition: color var(--animation-duration) var(--animation-timing-function);
 
   &:hover,
   &:focus,
   &--active {
-    color: getColor('accent');
+    color: var(--accent);
   }
 }
 .mobile-menu__tel {
@@ -123,7 +123,7 @@
   font-size: $fs-34;
   letter-spacing: $ls-02;
   line-height: 1.17;
-  color: getColor('accent');
+  color: var(--accent);
 
   opacity: 0;
   .menu-container.is-open & {
@@ -143,7 +143,7 @@
 
   &:hover,
   &:focus {
-    color: getColor('accent');
+    color: var(--accent);
   }
 
   opacity: 0;
@@ -177,5 +177,5 @@
   font-size: $fs-18;
   letter-spacing: $ls-02;
   line-height: 1.22;
-  color: getColor('accent');
+  color: var(--accent);
 }

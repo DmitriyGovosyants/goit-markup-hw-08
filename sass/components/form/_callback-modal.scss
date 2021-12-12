@@ -3,7 +3,7 @@
   padding: 40px;
   text-align: center;
 
-  background: getColor('bgd-primary');
+  background: var(--bgd-primary);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -59,7 +59,7 @@
   font-size: $fs-20;
   line-height: 1.5;
   letter-spacing: $ls-03;
-  color: getColor('title-primary');
+  color: var(--title-primary);
 
   @include mq(desktop) {
     line-height: 1.15;

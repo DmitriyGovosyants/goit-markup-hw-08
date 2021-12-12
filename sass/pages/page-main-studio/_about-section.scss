@@ -27,7 +27,7 @@
 
   font-weight: $fw-700;
   text-transform: uppercase;
-  color: getColor('text-tertiary');
+  color: var(--text-tertiary);
 
   background: rgba(47, 48, 58, 0.8);
 }

@@ -37,7 +37,7 @@
   height: 120px;
   margin-bottom: 30px;
 
-  background-color: getColor('bgd-tertiary');
+  background-color: var(--bgd-tertiary);
   border-radius: 4px;
 }
 
@@ -49,7 +49,7 @@
   line-height: 1.17;
 
   text-transform: uppercase;
-  color: getColor('title-primary');
+  color: var(--title-primary);
 
   @include mq(mobile-only) {
     text-align: center;

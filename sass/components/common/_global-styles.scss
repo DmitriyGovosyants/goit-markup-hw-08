@@ -3,9 +3,9 @@ body {
   font-size: $fs-14;
   line-height: 1.17;
   letter-spacing: $ls-03;
-  color: getColor('text-primary');
+  color: var(--text-primary);
 
-  background-color: getColor('bgd-primary');
+  background-color: var(--bgd-primary);
 }
 
 html,

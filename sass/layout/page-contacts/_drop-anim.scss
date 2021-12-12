@@ -25,7 +25,7 @@
   width: 20px;
   height: 20px;
 
-  background-color: getColor('accent');
+  background-color: var(--accent);
   border-radius: 20px;
 
   animation-name: drip;
@@ -45,7 +45,7 @@
 
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 30px solid getColor('accent');
+  border-bottom: 30px solid var(--accent);
 }
 
 .animation-drip-drop__wave {
@@ -57,7 +57,7 @@
   width: 2px;
   height: 1px;
 
-  border: getColor('accent') 7px solid;
+  border: var(--accent) 7px solid;
   border-radius: 300px / 150px;
 
   animation-name: ripple;
@@ -75,7 +75,7 @@
   width: 2px;
   height: 1px;
 
-  border: getColor('accent') 5px solid;
+  border: var(--accent) 5px solid;
   border-radius: 300px / 150px;
 
   opacity: 0;

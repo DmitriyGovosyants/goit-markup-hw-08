@@ -6,7 +6,7 @@
 
   text-align: center;
 
-  background-color: getColor('bgd-secondary');
+  background-color: var(--bgd-secondary);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -149,7 +149,7 @@ body.webp-false .hero {
   line-height: 1.62;
   letter-spacing: $ls-06;
   text-transform: uppercase;
-  color: getColor('title-secondary');
+  color: var(--title-secondary);
 
   @include mq(tablet) {
     width: 49%;

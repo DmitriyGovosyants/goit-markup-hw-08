@@ -3,7 +3,7 @@
   font-weight: $fw-700;
   font-size: $fs-26;
   letter-spacing: $ls-03;
-  color: getColor('accent');
+  color: var(--accent);
 
   animation: logo-anim 1000ms linear;
   animation-iteration-count: 1;
@@ -24,9 +24,9 @@
 }
 
 .logo__second-part {
-  color: getColor('logo-primary');
+  color: var(--logo-primary);
 
   &--light {
-    color: getColor('logo-secondary');
+    color: var(--logo-secondary);
   }
 }

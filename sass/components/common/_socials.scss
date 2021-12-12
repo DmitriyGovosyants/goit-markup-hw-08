@@ -20,9 +20,9 @@
   width: 100%;
   height: 100%;
 
-  color: getColor('icon-primary');
+  color: var(--icon-primary);
 
-  background-color: getColor('bgd-primary');
+  background-color: var(--bgd-primary);
   border: none;
   border-radius: 50%;
 
@@ -31,15 +31,15 @@
 
   &:hover,
   &:focus {
-    color: getColor('bgd-primary');
+    color: var(--bgd-primary);
 
-    background-color: getColor('accent');
+    background-color: var(--accent);
   }
 
   &--light {
-    color: getColor('bgd-primary');
+    color: var(--bgd-primary);
 
-    background-color: getColor('bgd-socials-light');
+    background-color: var(--bgd-socials-light);
 
     transition: background-color var(--animation-duration)
       var(--animation-timing-function);
@@ -47,7 +47,7 @@
 
   &--light:hover,
   &--light:focus {
-    background-color: getColor('accent');
+    background-color: var(--accent);
   }
 }
 

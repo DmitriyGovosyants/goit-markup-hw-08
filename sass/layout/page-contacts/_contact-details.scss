@@ -6,7 +6,7 @@
 }
 .contact-details__title {
   margin-bottom: 20px;
-  color: getColor('text-secondary');
+  color: var(--text-secondary);
 }
 .contact-details__link {
   font-size: $fs-28;
@@ -14,6 +14,6 @@
 
   &:hover,
   &:focus {
-    color: getColor('accent');
+    color: var(--accent);
   }
 }

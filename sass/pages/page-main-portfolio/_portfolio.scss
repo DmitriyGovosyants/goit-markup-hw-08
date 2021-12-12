@@ -86,7 +86,7 @@
   line-height: 1.56;
   letter-spacing: $ls-03;
 
-  color: getColor('text-tertiary');
+  color: var(--text-tertiary);
 }
 
 .portfolio__text-wrap {
@@ -105,7 +105,7 @@
   font-size: $fs-18;
   line-height: $lh-2-00;
   letter-spacing: $ls-06;
-  color: getColor('title-primary');
+  color: var(--title-primary);
 
   overflow: hidden;
 
@@ -118,5 +118,5 @@
   font-size: $fs-16;
   line-height: 1.87;
   letter-spacing: $ls-03;
-  color: getColor('text-primary');
+  color: var(--text-primary);
 }

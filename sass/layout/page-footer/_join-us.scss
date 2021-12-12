@@ -17,5 +17,5 @@
 
   font-weight: $fw-700;
   text-transform: uppercase;
-  color: getColor('text-tertiary');
+  color: var(--text-tertiary);
 }

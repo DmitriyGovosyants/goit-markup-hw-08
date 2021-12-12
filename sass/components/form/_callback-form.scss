@@ -34,7 +34,7 @@
     var(--animation-timing-function);
 
   &:focus {
-    border: 1px solid getColor('accent');
+    border: 1px solid var(--accent);
     border-radius: 4px;
   }
 }
@@ -48,7 +48,7 @@
   transition: fill var(--animation-duration) var(--animation-timing-function);
 
   .callback-form__input:focus + & {
-    fill: getColor('accent');
+    fill: var(--accent);
   }
 }
 
@@ -73,7 +73,7 @@
   }
 
   &:focus {
-    border: 1px solid getColor('accent');
+    border: 1px solid var(--accent);
     border-radius: 4px;
   }
 }
@@ -107,18 +107,18 @@
   height: 15px;
   margin-right: 8px;
 
-  border: 2px solid getColor('text-secondary');
+  border: 2px solid var(--text-secondary);
   border-radius: 2px;
 
   .callback-form__agreement-chekbox:checked + & {
-    background-color: getColor('accent');
-    border-color: getColor('accent');
+    background-color: var(--accent);
+    border-color: var(--accent);
     background-image: url('../images/agreement-ok.svg');
     background-size: contain;
   }
 
   .callback-form__agreement-chekbox:focus + & {
-    border: 2px solid getColor('accent');
+    border: 2px solid var(--accent);
   }
 }
 

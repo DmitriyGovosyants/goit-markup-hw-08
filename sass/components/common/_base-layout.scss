@@ -19,11 +19,11 @@
   padding: 60px 0;
 
   &--bgd-color {
-    background-color: getColor('bgd-tertiary');
+    background-color: var(--bgd-tertiary);
   }
 
   &--bgd-elements-color {
-    background-color: getColor('bgd-secondary');
+    background-color: var(--bgd-secondary);
   }
 
   @include mq(notDesktop) {
@@ -46,7 +46,7 @@
   letter-spacing: $ls-03;
   text-align: center;
 
-  color: getColor('title-primary');
+  color: var(--title-primary);
 
   &--hidden {
     @extend %visuallity-hidden;

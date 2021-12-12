@@ -25,12 +25,12 @@
 
   font-weight: $fw-500;
   letter-spacing: $ls-02;
-  color: getColor('text-secondary');
+  color: var(--text-secondary);
 
   transition: color var(--animation-duration) var(--animation-timing-function);
 
   &--active {
-    color: getColor('accent');
+    color: var(--accent);
   }
 
   &--active::after {
@@ -42,12 +42,12 @@
     width: 100%;
     height: 4px;
 
-    background-color: getColor('accent');
+    background-color: var(--accent);
     border-radius: 2px;
   }
 
   &:hover,
   &:focus {
-    color: getColor('accent');
+    color: var(--accent);
   }
 }
