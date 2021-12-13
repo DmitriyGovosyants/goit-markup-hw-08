@@ -58,6 +58,14 @@
   }
 }
 
+.menu-toggle__icon-open {
+  fill: var(--logo-primary);
+}
+
+.menu-toggle__icon-close {
+  fill: var(--text-secondary);
+}
+
 .menu-toggle__icon-open,
 .menu-toggle__icon-close {
   &:hover {

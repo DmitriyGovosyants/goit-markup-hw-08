@@ -719,7 +719,7 @@ img {
 .theme-switcher {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 70px;
   display: flex;
 }
 
@@ -741,19 +741,77 @@ img {
 }
 
 .theme-switcher__label {
+  padding: 10px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.03em;
-  padding: 10px;
   cursor: pointer;
 }
 
 .theme-switcher__label:hover {
   color: var(--accent);
+  box-shadow: 3px 3px 5px rgba(241, 233, 233, 0.829), -3px -3px 5px rgba(241, 233, 233, 0.829);
+  border-radius: 8px;
 }
 
 .theme-switcher__input:checked ~ .theme-switcher__label {
+  box-shadow: 5px 5px 10px rgba(241, 233, 233, 0.829), -5px -5px 10px rgba(241, 233, 233, 0.829);
+  border-radius: 8px;
+}
+
+.lang-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+}
+
+.lang-switch__btn {
+  display: block;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--text-tertiary);
+  box-shadow: 5px 5px 10px rgba(241, 233, 233, 0.829), -5px -5px 10px rgba(241, 233, 233, 0.829);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lang-switch__btn:hover {
+  background-color: var(--accent);
+}
+
+.lang-switch__content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 42px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  background-color: var(--text-tertiary);
+  border-radius: 8px;
+}
+
+.lang-switch:hover .lang-switch__content {
+  display: block;
+}
+
+.lang-switch__link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(text-secondary);
+}
+
+.lang-switch__link:hover {
+  color: var(--text-tertiary);
+  background-color: var(--accent);
   box-shadow: 5px 5px 10px rgba(241, 233, 233, 0.829), -5px -5px 10px rgba(241, 233, 233, 0.829);
   border-radius: 8px;
 }
@@ -1088,6 +1146,14 @@ img {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+.menu-toggle__icon-open {
+  fill: var(--logo-primary);
+}
+
+.menu-toggle__icon-close {
+  fill: var(--text-secondary);
 }
 
 .menu-toggle__icon-open:hover,

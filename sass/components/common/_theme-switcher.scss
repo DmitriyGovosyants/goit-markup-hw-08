@@ -1,13 +1,14 @@
 .theme-switcher {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 70px;
 
   display: flex;
 }
 
 .theme-switcher__field {
   display: flex;
+
   &:nth-child(1) {
     margin-right: 15px;
     color: var(--text-tertiary);
@@ -22,16 +23,20 @@
 }
 
 .theme-switcher__label {
+  padding: 10px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: $fw-700;
   font-size: $fs-16;
   letter-spacing: $ls-03;
-  padding: 10px;
 
   cursor: pointer;
 
   &:hover {
     color: var(--accent);
+    box-shadow: 3px 3px 5px rgba(241, 233, 233, 0.829),
+      -3px -3px 5px rgba(241, 233, 233, 0.829);
+    border-radius: 8px;
   }
 
   .theme-switcher__input:checked ~ & {
