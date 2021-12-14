@@ -13,7 +13,7 @@ Main additions
       Lorem20 на аутентичный.
 - [ ] Text | All devices | Добавлена локализация на странице Студия UA | RU | EN
       .
-- [ ] IMG | All devices | Добавлены webp img в <picture> по просьбе Google =).
+- [ ] IMG | All devices | Добавлены webp img в picture по просьбе Google =).
 - [ ] CSS | All devices | Настроен fixed header.
 - [ ] CSS | All devices | Добавлена анимация логотипа с помощью @keyframes.
 - [ ] CSS | All devices | Добавлена возможность занимать 2 строки для
