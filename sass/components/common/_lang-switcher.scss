@@ -21,10 +21,10 @@
   border-radius: 8px;
 
   cursor: pointer;
-}
 
-.lang-switch__btn:hover {
-  background-color: var(--accent);
+  &:hover {
+    background-color: var(--accent);
+  }
 }
 
 .lang-switch__content {
@@ -54,13 +54,13 @@
 
   text-decoration: none;
   color: var(text-secondary);
-}
 
-.lang-switch__link:hover {
-  color: var(--text-tertiary);
+  &:hover {
+    color: var(--text-tertiary);
 
-  background-color: var(--accent);
-  box-shadow: 5px 5px 10px rgba(241, 233, 233, 0.829),
-    -5px -5px 10px rgba(241, 233, 233, 0.829);
-  border-radius: 8px;
+    background-color: var(--accent);
+    box-shadow: 5px 5px 10px rgba(241, 233, 233, 0.829),
+      -5px -5px 10px rgba(241, 233, 233, 0.829);
+    border-radius: 8px;
+  }
 }

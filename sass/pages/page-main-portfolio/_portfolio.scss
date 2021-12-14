@@ -104,19 +104,19 @@
 }
 
 .portfolio__title {
-  height: $fs-18 * $lh-2-00 * $number-lines-2;
+  height: $fs-18 * 2 * $number-lines-mobile-tablet;
   margin-bottom: 4px;
 
   font-weight: $fw-700;
   font-size: $fs-18;
-  line-height: $lh-2-00;
+  line-height: 2;
   letter-spacing: $ls-06;
   color: var(--title-primary);
 
   overflow: hidden;
 
   @include mq(desktop) {
-    height: $fs-18 * $lh-2-00 * $number-lines-1;
+    height: $fs-18 * 2 * $number-lines-desktop;
   }
 }
 
