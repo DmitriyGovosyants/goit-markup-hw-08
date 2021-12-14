@@ -1,9 +1,11 @@
 # goit-markup-hw-08
 
-HW8 Main additions
+Do, or do not. There is no "try"
 
-Do, or do not. There is no "try" Все приобретенные мной за 2 месяца знания по
+Все приобретенные мной за 2 месяца знания по
 верстке и немного по программированию реализованы в этой работе
+
+Main additions
 
 - [ ] Pages | All devices | Оформлена страница Контакты.
 - [ ] Pages | All devices | Оформлена страница Условия договора.
