@@ -30,7 +30,7 @@ Do, or do not. There is no "try" Все приобретенные мной за
       страницы Студия.
 - [ ] JS | All devices | Добавлены webp img в background-image секции hero (по
       очередной просьбе Google). Настроен JS-webp трекер.
-- [ ] JS | Mobile | Добавлена анимация section clients при прокрутке страницы. С
+- [ ] JS | All devices | Добавлена анимация section clients при прокрутке страницы. С
       повторением.
 - [ ] JS | Desktop | Добавлен слайдер на страницу Контакты.
 
