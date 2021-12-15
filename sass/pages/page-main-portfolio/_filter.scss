@@ -13,3 +13,11 @@
     margin-bottom: 50px;
   }
 }
+
+.filter__item {
+  margin-top: 15px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

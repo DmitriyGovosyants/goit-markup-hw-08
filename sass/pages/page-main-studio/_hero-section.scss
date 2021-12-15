@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   padding: 118px 0px;
@@ -34,7 +33,6 @@ body.webp-true .hero {
   }
 
   @include mq(tablet) {
-    max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -55,7 +53,6 @@ body.webp-true .hero {
   }
 
   @include mq(desktop) {
-    max-width: 1600px;
     padding: 200px 0px;
     background-image: linear-gradient(
         to right,
@@ -96,7 +93,6 @@ body.webp-false .hero {
   }
 
   @include mq(tablet) {
-    max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -117,7 +113,6 @@ body.webp-false .hero {
   }
 
   @include mq(desktop) {
-    max-width: 1600px;
     padding: 200px 0px;
     background-image: linear-gradient(
         to right,

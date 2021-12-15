@@ -38,8 +38,7 @@
   &--filter {
     min-width: auto;
     height: 38px;
-    margin-top: 15px;
-    padding: 6px 22px;
+    padding: 0 22px;
 
     font-weight: $fw-500;
     line-height: 1.63;
@@ -53,10 +52,6 @@
       background-color var(--animation-duration)
         var(--animation-timing-function),
       box-shadow var(--animation-duration) var(--animation-timing-function);
-  }
-
-  &--filter:not(:last-child) {
-    margin-right: 8px;
   }
 
   &--filter:hover,

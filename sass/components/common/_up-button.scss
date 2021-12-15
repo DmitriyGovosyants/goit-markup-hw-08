@@ -11,12 +11,12 @@
   text-align: center;
   color: var(--text-tertiary);
 
-  background-color: var(--bgd-secondary);
+  background-color: var(--accent);
   border-radius: 50%;
 
   cursor: pointer;
 }
 
 .scrollup:hover {
-  background-color: var(--accent);
+  background-color: var(--bgd-button-focus);
 }

@@ -625,8 +625,7 @@ img {
 .button--filter {
   min-width: auto;
   height: 38px;
-  margin-top: 15px;
-  padding: 6px 22px;
+  padding: 0 22px;
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
@@ -634,10 +633,6 @@ img {
   background-color: var(--bgd-tertiary);
   box-shadow: none;
   transition: color var(--animation-duration) var(--animation-timing-function), background-color var(--animation-duration) var(--animation-timing-function), box-shadow var(--animation-duration) var(--animation-timing-function);
-}
-
-.button--filter:not(:last-child) {
-  margin-right: 8px;
 }
 
 .button--filter:hover, .button--filter:focus {
@@ -826,13 +821,13 @@ img {
   font-size: 28px;
   text-align: center;
   color: var(--text-tertiary);
-  background-color: var(--bgd-secondary);
+  background-color: var(--accent);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .scrollup:hover {
-  background-color: var(--accent);
+  background-color: var(--bgd-button-focus);
 }
 
 .backdrop {
@@ -1331,21 +1326,15 @@ img {
   color: var(--accent);
 }
 
-.contacts {
-  display: flex;
-  align-items: center;
-}
-
 @media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .contacts {
-    flex-direction: column;
-    align-items: start;
+    display: flex;
   }
 }
 
@@ -1408,16 +1397,13 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__container {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
 .address {
-  font-style: normal;
-}
-
-.address__list {
   margin-top: 20px;
+  font-style: normal;
 }
 
 .address__item {
@@ -1459,12 +1445,6 @@ img {
 @media screen and (max-width: 767px) {
   .join-us {
     margin-top: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .join-us {
-    margin-left: 165px;
   }
 }
 
@@ -1559,7 +1539,6 @@ img {
 
 .hero {
   position: relative;
-  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   padding: 118px 0px;
@@ -1582,7 +1561,6 @@ body.webp-true .hero {
 
 @media screen and (min-width: 768px) {
   body.webp-true .hero {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768.webp");
   }
 }
@@ -1595,7 +1573,6 @@ body.webp-true .hero {
 
 @media screen and (min-width: 1200px) {
   body.webp-true .hero {
-    max-width: 1600px;
     padding: 200px 0px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600.webp");
   }
@@ -1619,7 +1596,6 @@ body.webp-false .hero {
 
 @media screen and (min-width: 768px) {
   body.webp-false .hero {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768.jpg");
   }
 }
@@ -1632,7 +1608,6 @@ body.webp-false .hero {
 
 @media screen and (min-width: 1200px) {
   body.webp-false .hero {
-    max-width: 1600px;
     padding: 200px 0px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600.jpg");
   }
@@ -1940,6 +1915,14 @@ body.webp-false .hero {
   }
 }
 
+.filter__item {
+  margin-top: 15px;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio {
   text-align: left;
 }
@@ -1948,21 +1931,14 @@ body.webp-false .hero {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px;
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-bottom: -15px;
+    margin: -15px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    margin-top: 35px;
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
   }
-}
-
-.portfolio__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2041,7 +2017,6 @@ body.webp-false .hero {
 }
 
 .portfolio__title {
-  height: 72px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -2049,12 +2024,9 @@ body.webp-false .hero {
   letter-spacing: 0.06em;
   color: var(--title-primary);
   overflow: hidden;
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio__title {
-    height: 36px;
-  }
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .portfolio__text {

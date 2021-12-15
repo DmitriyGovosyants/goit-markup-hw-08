@@ -2,9 +2,6 @@
   @include mq(mobile-only) {
     margin-top: 60px;
   }
-  @include mq(tablet-only) {
-    margin-left: 165px;
-  }
 }
 .join-us {
   @include mq(desktop) {

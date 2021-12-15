@@ -4,20 +4,15 @@
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px;
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-bottom: -15px;
-  }
-
-  @include mq(desktop) {
-    margin-top: 35px;
+    margin: -15px;
   }
 }
 
 .portfolio__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @include mq(mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @include mq(tablet) {
@@ -104,7 +99,6 @@
 }
 
 .portfolio__title {
-  height: $fs-18 * 2 * $number-lines-mobile-tablet;
   margin-bottom: 4px;
 
   font-weight: $fw-700;
@@ -114,10 +108,9 @@
   color: var(--title-primary);
 
   overflow: hidden;
-
-  @include mq(desktop) {
-    height: $fs-18 * 2 * $number-lines-desktop;
-  }
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .portfolio__text {
