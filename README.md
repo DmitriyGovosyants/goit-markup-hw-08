@@ -7,26 +7,26 @@ Do, or do not. There is no "try"
 
 Main additions
 
-- [ ] Pages | All devices | Оформлена страница Контакты.
-- [ ] Pages | All devices | Оформлена страница Условия договора.
-- [ ] Text | All devices | Изменен текст на страницах Студия и Портфолио с
-      Lorem20 на аутентичный.
-- [ ] Text | All devices | Добавлена локализация на странице Студия UA | RU | EN
+- [ ] Pages | All devices | Оформлена страница "Контакты".
+- [ ] Pages | All devices | Оформлена страница "Условия договора".
+- [ ] Text | All devices | Изменен текст на страницах "Студия" и "Портфолио" с
+      Lorem10 на аутентичный.
+- [ ] Text | All devices | Добавлена локализация на странице "Студия" UA | RU | EN
       .
 - [ ] IMG | All devices | Добавлены webp img в picture.
 - [ ] CSS | All devices | Настроен fixed header.
 - [ ] CSS | All devices | Добавлена анимация логотипа с помощью @keyframes.
 - [ ] CSS | Mobile | Добавлена анимация мобильного меню.
 - [ ] CSS | Desktop | Добавлена анимация drip drop для страницы "Контакты".
-- [ ] JS | All devices | Настроен фильтр на странице Портфолио. При фильтрации
+- [ ] JS | All devices | Настроен фильтр на странице "Портфолио". При фильтрации
       данных футер поднимался выше, поэтому footer fixed to bottom page.
 - [ ] JS | All devices | Добавлена кнопка возврата к началу страницы при
       прокрутке.
 - [ ] JS | All devices | Добавлена возможность переключения цветовой темы для
-      страницы Студия.
+      страницы "Студия".
 - [ ] JS | All devices | Добавлены webp img в background-image секции hero. Настроен webp-трекер из библиотеки modernizr.
 - [ ] JS | All devices | Добавлена анимация section clients при прокрутке страницы.
-- [ ] JS | Desktop | Добавлен слайдер на страницу Контакты.
+- [ ] JS | Desktop | Добавлен слайдер на страницу "Контакты".
 
 Secondary additions
 
@@ -39,7 +39,7 @@ Secondary additions
 - [ ] Modern-normalize is connected locally.
 - [ ] Fonts are connected locally.
 - [ ] Added font-display: swap; in fonts to avoid invisible text in browser.
-- [ ] Added 3D text effect on the contacts page
+- [ ] Added 3D text effect on the "Contacts" page
 
 I didn`t have time and/or experience for this
 
