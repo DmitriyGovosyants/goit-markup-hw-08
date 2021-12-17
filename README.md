@@ -13,27 +13,19 @@ Main additions
       Lorem20 на аутентичный.
 - [ ] Text | All devices | Добавлена локализация на странице Студия UA | RU | EN
       .
-- [ ] IMG | All devices | Добавлены webp img в picture по просьбе Google =).
+- [ ] IMG | All devices | Добавлены webp img в picture.
 - [ ] CSS | All devices | Настроен fixed header.
 - [ ] CSS | All devices | Добавлена анимация логотипа с помощью @keyframes.
-- [ ] CSS | All devices | Добавлена возможность занимать 2 строки для
-      portfolio\_\_title. Необходимо чтобы устранить переполнение и кривой
-      дизайн с макета. Применение overflow не очень подходит в данном случае.
-      Сделал фиксированную высоту заголовка, взяв за образец Розетку. Для
-      устройств с min-width: 320px and max-width: 1199px - 2 строки. Для
-      устройств с min-width: 1200px - 1 строка.
 - [ ] CSS | Mobile | Добавлена анимация мобильного меню.
-- [ ] CSS | Desktop | Добавлена анимация drip drop для страницы контакты.
+- [ ] CSS | Desktop | Добавлена анимация drip drop для страницы "Контакты".
 - [ ] JS | All devices | Настроен фильтр на странице Портфолио. При фильтрации
       данных футер поднимался выше, поэтому footer fixed to bottom page.
 - [ ] JS | All devices | Добавлена кнопка возврата к началу страницы при
       прокрутке.
 - [ ] JS | All devices | Добавлена возможность переключения цветовой темы для
       страницы Студия.
-- [ ] JS | All devices | Добавлены webp img в background-image секции hero (по
-      очередной просьбе Google). Настроен JS-webp трекер.
-- [ ] JS | All devices | Добавлена анимация section clients при прокрутке страницы. С
-      повторением.
+- [ ] JS | All devices | Добавлены webp img в background-image секции hero. Настроен webp-трекер из библиотеки modernizr.
+- [ ] JS | All devices | Добавлена анимация section clients при прокрутке страницы.
 - [ ] JS | Desktop | Добавлен слайдер на страницу Контакты.
 
 Secondary additions
