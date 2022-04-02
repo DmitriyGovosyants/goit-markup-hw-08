@@ -2,31 +2,27 @@
 
 Do, or do not. There is no "try"
 
-Все приобретенные мной за 2 месяца знания по
-верстке и немного по программированию реализованы в этой работе
+Everything I’ve learned in two months
+web design and programming
 
 Main additions
 
-- [ ] Pages | All devices | Оформлена страница "Контакты".
-- [ ] Pages | All devices | Оформлена страница "Условия договора".
-- [ ] Text | All devices | Изменен текст на страницах "Студия" и "Портфолио" с
-      Lorem10 на аутентичный.
-- [ ] Text | All devices | Добавлена локализация на странице "Студия" UA | RU | EN
+- [ ] Pages | All devices | Create page "Contacts".
+- [ ] Pages | All devices | Create page "Contract terms".
+- [ ] Text | All devices | Changed the text on the pages "Studio" and "Portfolio" from Lorem10 to authentic.
+- [ ] Text | All devices | Added localization on "Studio" page UA | RU | EN
       .
-- [ ] IMG | All devices | Добавлены webp img в picture.
-- [ ] CSS | All devices | Настроен fixed header.
-- [ ] CSS | All devices | Добавлена анимация логотипа с помощью @keyframes.
-- [ ] CSS | Mobile | Добавлена анимация мобильного меню.
-- [ ] CSS | Desktop | Добавлена анимация drip drop для страницы "Контакты".
-- [ ] JS | All devices | Настроен фильтр на странице "Портфолио". При фильтрации
-      данных футер поднимался выше, поэтому footer fixed to bottom page.
-- [ ] JS | All devices | Добавлена кнопка возврата к началу страницы при
-      прокрутке.
-- [ ] JS | All devices | Добавлена возможность переключения цветовой темы для
-      страницы "Студия".
-- [ ] JS | All devices | Добавлены webp img в background-image секции hero. Настроен webp-трекер из библиотеки modernizr.
-- [ ] JS | All devices | Добавлена анимация section clients при прокрутке страницы.
-- [ ] JS | Desktop | Добавлен слайдер на страницу "Контакты".
+- [ ] IMG | All devices | Added webp img в picture.
+- [ ] CSS | All devices | Create fixed header.
+- [ ] CSS | All devices | Added logo animation with @keyframes.
+- [ ] CSS | Mobile | Added mobile menu animation.
+- [ ] CSS | Desktop | Added drip drop animation for "Contacts" page.
+- [ ] JS | All devices | The filter is configured on the "Portfolio" page. When filtering data, the footer is higher, so footer fixed to bottom page.
+- [ ] JS | All devices | Added a button to return to the top of the page.
+- [ ] JS | All devices | Added switch color theme for "Studio" page.
+- [ ] JS | All devices | Added webp img in the background-image section hero. The webp tracker from the library modernizr is configured.
+- [ ] JS | All devices | Animated section clients while scrolling the page.
+- [ ] JS | Desktop | Added slider to "Contacts" page.
 
 Secondary additions
 
@@ -43,8 +39,6 @@ Secondary additions
 
 I didn`t have time and/or experience for this
 
-- [ ] Чат-бот
-- [ ] Функция обратного звонка
-- [ ] Мультиязычный сайт на backend
-- [ ] Техника кадрирования изображений
-- [ ] Разобраться с loading="lazy" и critical CSS чтобы первый контент, который видит пользователь при входе на сайт, загружался максимально быстро.
+- [ ] Chat bot
+- [ ] Callback
+- [ ] Multilanguage site with backend
