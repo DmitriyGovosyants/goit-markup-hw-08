@@ -2,8 +2,7 @@
 
 Do, or do not. There is no "try"
 
-Everything I’ve learned in two months
-web design and programming
+Everything I’ve learned in web design and programming in two months.
 
 Main additions
 
