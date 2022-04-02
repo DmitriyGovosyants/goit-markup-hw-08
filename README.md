@@ -1,4 +1,4 @@
-# goit-markup-hw-08
+# Web design
 
 Do, or do not. There is no "try"
 
